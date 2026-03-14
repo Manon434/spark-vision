@@ -31,32 +31,41 @@
 
 // };
 
-import Contact from "../models/Contact.js";
+import Lead from "../models/Lead.js";
 
-export const submitContact = async (req,res)=>{
+export const createLead = async (req, res) => {
 
-console.log("Incoming lead:", req.body);
+  console.log("Incoming lead:", req.body);
 
-try{
+  try {
 
-const contact = new Contact(req.body);
+    const { name, email, company, message } = req.body;
 
-await contact.save();
+    const newLead = new Lead({
+      name,
+      email,
+      company,
+      message
+    });
 
-res.status(200).json({
-success:true,
-message:"Saved to database"
-});
+    await newLead.save();
 
-}catch(err){
+    console.log("Lead saved to MongoDB");
 
-console.error(err);
+    res.status(200).json({
+      success: true,
+      message: "Lead saved successfully"
+    });
 
-res.status(500).json({
-success:false,
-message:"Server error"
-});
+  } catch (error) {
 
-}
+    console.error(error);
 
-}
+    res.status(500).json({
+      success: false,
+      message: error.message
+    });
+
+  }
+
+};
