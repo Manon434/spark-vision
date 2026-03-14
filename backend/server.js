@@ -9,6 +9,8 @@ dotenv.config();
 
 const app = express();
 
+
+
 // app.use(cors());
 app.use(cors({
 origin:"https://spark-vision-gamma.vercel.app/"  
@@ -34,6 +36,10 @@ const connectDB = async () => {
   }
 
 };
+
+app.get("/", (req,res)=>{
+res.send("Spark Vision API running")
+})
 
 connectDB();
 
