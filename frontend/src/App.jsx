@@ -1,3 +1,7 @@
+
+
+// import { Routes, Route, BrowserRouter } from "react-router-dom"
+
 // import Navbar from "./components/Navbar"
 // import Hero from "./components/Hero"
 // import Solutions from "./components/Solutions"
@@ -6,25 +10,57 @@
 // import Contact from "./components/Contact"
 // import Footer from "./components/Footer"
 
-// function App() {
+// import SAPCaseStudy from "./pages/SAPCaseStudy"
 
-//   return (
+// import Cloud from "./pages/Cloud"
+// import Analytics from "./pages/Analytics"
+// import ManagedIT from "./pages/ManagedIT"
+// import Digital from "./pages/Digital"
+// import AboutSpark from "./pages/AboutSpark"
+// import ScrollToTop from "./components/ScrollToTop"
+
+// function Home(){
+//   return(
 //     <>
-//       <Navbar/>
 //       <Hero/>
 //       <Solutions/>
 //       <CaseStudies/>
 //       <Innovation/>
 //       <Contact/>
-//       <Footer/>
 //     </>
 //   )
+// }
 
+// function App(){
+
+//   return(
+
+//     <>
+    
+//       <Navbar/>
+
+//       <Routes>
+
+//         <Route path="/" element={<Home/>}/>
+
+//         <Route path="/solutions/cloud" element={<Cloud/>}/>
+//         <Route path="/solutions/analytics" element={<Analytics/>}/>
+//         <Route path="/solutions/managed" element={<ManagedIT/>}/>
+//         <Route path="/solutions/digital" element={<Digital/>}/>
+
+//         <Route path="/case-study/sap-migration" element={<SAPCaseStudy/>}/>
+//         <Route path="/about-spark" element={<AboutSpark/>}/>
+//       </Routes>
+
+//       <Footer/>
+//     </>
+   
+//   )
 // }
 
 // export default App
 
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { Routes, Route } from "react-router-dom"
 
 import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
@@ -35,44 +71,53 @@ import Contact from "./components/Contact"
 import Footer from "./components/Footer"
 
 import SAPCaseStudy from "./pages/SAPCaseStudy"
+import Cloud from "./pages/Cloud"
+import Analytics from "./pages/Analytics"
+import ManagedIT from "./pages/ManagedIT"
+import Digital from "./pages/Digital"
+import AboutSpark from "./pages/AboutSpark"
+
+import ScrollToTop from "./components/ScrollToTop"
 
 function Home(){
-
-return(
-
-<>
-<Hero/>
-<Solutions/>
-<CaseStudies/>
-<Innovation/>
-<Contact/>
-</>
-
-)
-
+  return(
+    <>
+      <Hero/>
+      <Solutions/>
+      <CaseStudies/>
+      <Innovation/>
+      <Contact/>
+    </>
+  )
 }
 
 function App(){
 
-return(
+  return(
 
-<BrowserRouter>
+    <>
+      <ScrollToTop/>
 
-<Navbar/>
+      <Navbar/>
 
-<Routes>
+      <Routes>
 
-<Route path="/" element={<Home/>}/>
-<Route path="/case-study/sap-migration" element={<SAPCaseStudy/>}/>
+        <Route path="/" element={<Home/>}/>
 
-</Routes>
+        <Route path="/solutions/cloud" element={<Cloud/>}/>
+        <Route path="/solutions/analytics" element={<Analytics/>}/>
+        <Route path="/solutions/managed" element={<ManagedIT/>}/>
+        <Route path="/solutions/digital" element={<Digital/>}/>
 
-<Footer/>
+        <Route path="/case-study/sap-migration" element={<SAPCaseStudy/>}/>
+        <Route path="/about-spark" element={<AboutSpark/>}/>
 
-</BrowserRouter>
+      </Routes>
 
-)
-
+      <Footer/>
+    </>
+   
+  )
 }
 
 export default App

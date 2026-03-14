@@ -274,9 +274,9 @@ alert("Error sending message. Please try again.")
 
 return(
 
-<section id="contact" className="py-28 bg-gray-50">
+<section id="contact" className="py-28 bg-blue-50">
 
-<div className="max-w-7xl mx-auto px-8">
+<div className="max-w-7xl mx-auto px-6">
 
 <h2 className="text-4xl font-bold text-center mb-16 text-gray-900">
 Start Your Transformation
@@ -296,7 +296,7 @@ Start Your Transformation
 
 <div className="bg-teal-100 p-3 rounded-lg h-fit hover:bg-teal-500 transition">
 
-<FiMapPin className="text-teal-600 text-xl hover:text-white transition"/>
+<FiMapPin className="text-blue-600 text-xl hover:text-white transition"/>
 
 </div>
 
@@ -304,7 +304,7 @@ Start Your Transformation
 
 <h3 className="font-semibold text-lg text-gray-900">
 Mumbai
-<span className="text-teal-600 text-sm ml-2">
+<span className="text-blue-600 text-sm ml-2">
 HEADQUARTERS
 </span>
 </h3>
@@ -332,7 +332,7 @@ Bandra Kurla Complex, Mumbai MH 400051
 
 <div className="bg-teal-100 p-3 rounded-lg h-fit hover:bg-teal-500 transition">
 
-<FiMapPin className="text-teal-600 text-xl hover:text-white transition"/>
+<FiMapPin className="text-blue-600 text-xl hover:text-white transition"/>
 
 </div>
 
@@ -340,7 +340,7 @@ Bandra Kurla Complex, Mumbai MH 400051
 
 <h3 className="font-semibold text-lg text-gray-900">
 Chandigarh
-<span className="text-teal-600 text-sm ml-2">
+<span className="text-blue-600 text-sm ml-2">
 INNOVATION HUB
 </span>
 </h3>
@@ -368,7 +368,7 @@ IT Park Sector 22 Chandigarh
 
 <div className="bg-teal-100 p-3 rounded-lg h-fit hover:bg-teal-500 transition">
 
-<FiMapPin className="text-teal-600 text-xl hover:text-white transition"/>
+<FiMapPin className="text-blue-600 text-xl hover:text-white transition"/>
 
 </div>
 
@@ -376,7 +376,7 @@ IT Park Sector 22 Chandigarh
 
 <h3 className="font-semibold text-lg text-gray-900">
 Rajasthan
-<span className="text-teal-600 text-sm ml-2">
+<span className="text-blue-600 text-sm ml-2">
 DELIVERY CENTER
 </span>
 </h3>

@@ -1,96 +1,99 @@
 
 
-import ThreeScene from "./ThreeScene"
-import Particles from "./Particles"
+import { HashLink } from "react-router-hash-link"
 
-function Hero() {
+function Hero(){
 
-  return (
-<section className="pt-36 pb-28 relative overflow-hidden bg-gradient-to-r from-teal-50 via-white to-white">
+return(
 
-      {/* floating particles */}
-      <Particles />
+<section className="pt-32 pb-24 bg-white">
 
-      <div className="container-main grid lg:grid-cols-2 items-center gap-16">
+<div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center">
 
-        {/* LEFT SIDE - 3D MODEL */}
+{/* IMAGE */}
 
-        <div className="flex justify-center">
-          <ThreeScene />
-        </div>
+{/* <div className="flex justify-center">
 
-        {/* RIGHT SIDE - TEXT */}
+<img
+src="https://i.imgur.com/GzRS9Xa.jpeg"
+alt="Spark Vision"
+className="w-80 md:w-[480px] object-contain drop-shadow-xl hover:scale-125 transition"
+/>
 
-        <div>
+</div> */}
 
-          <p className="uppercase text-sm tracking-[4px] text-teal-500 mb-4">
-            SPARK VISION CONSULTING
-          </p>
+<div className="flex justify-center items-center relative">
 
-          <h1 className="text-[72px] leading-[80px] font-bold text-gray-900">
+<div className="absolute w-[400px] h-[400px] bg-blue-200 opacity-20 blur-3xl rounded-full animate-pulse"></div>
 
-            ARCHITECTING<br/>
-
-            YOUR
-            <span className="text-teal-500"> DIGITAL</span><br/>
-
-            FUTURE.
-
-          </h1>
-
-          <p className="mt-6 text-lg text-gray-600 max-w-xl">
-
-            Strategic Enterprise IT Consulting,
-            SAP Solutions, Cloud Migration,
-            and Advanced Data Analytics.
-
-          </p>
-
-          {/* <div className="mt-10 flex gap-4">
-
-            <a
-              href="#solutions"
-              className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-xl font-semibold shadow-lg"
-            >
-              EXPLORE SOLUTIONS →
-            </a>
-
-            <a
-              href="#contact"
-              className="border border-gray-300 px-8 py-4 rounded-xl font-semibold text-gray-700 hover:bg-gray-50"
-            >
-              Talk to an Expert
-            </a>
-
-          </div> */}
-          <div className="mt-10 flex gap-4">
-
-  <a
-    href="#solutions"
-    className="relative px-8 py-4 rounded-xl font-semibold text-white
-    bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600
-    shadow-[0_8px_30px_rgba(255,120,0,0.4)]
-    hover:scale-105 transition"
-  >
-    EXPLORE SOLUTIONS →
-  </a>
-
-  <a
-    href="#contact"
-    className="border border-gray-300 px-8 py-4 rounded-xl font-semibold text-gray-700 hover:bg-gray-50"
-  >
-    Talk to an Expert
-  </a>
+<img
+src="https://i.imgur.com/GzRS9Xa.jpeg"
+alt="Spark Vision"
+className="relative w-[320px] md:w-[520px] object-contain drop-shadow-2xl transition duration-500 hover:scale-105"
+/>
 
 </div>
 
-        </div>
+{/* TEXT */}
 
-      </div>
+<div className="text-center md:text-left">
 
-    </section>
+<p className="text-blue-600 text-sm tracking-widest mb-4">
+DIGITAL TRANSFORMATION PARTNER
+</p>
 
-  )
+<h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+
+Transforming Businesses with
+<span className="text-blue-600"> Technology & Strategy</span>
+
+</h1>
+
+<p className="text-gray-600 mb-8">
+
+Spark Vision Consulting helps enterprises modernize operations,
+optimize supply chains, and unlock data-driven insights through
+SAP transformation, analytics, and custom technology solutions.
+
+</p>
+
+<div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
+
+{/* CONTACT BUTTON */}
+
+<HashLink
+smooth
+to="/#contact"
+className="relative overflow-hidden bg-gradient-to-r from-brand-dark to-brand-primary text-white px-6 py-3 rounded-lg font-semibold shadow-lg transition duration-300 hover:scale-105"
+>
+
+<span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-0 hover:opacity-100 transition"></span>
+
+Request Consultation
+
+</HashLink>
+
+{/* SOLUTIONS BUTTON */}
+
+<HashLink
+smooth
+to="/#solutions"
+className="border border-brand-primary text-brand-dark px-6 py-3 rounded-lg font-semibold hover:bg-brand-light hover:text-white transition"
+>
+
+Explore Solutions
+
+</HashLink>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+)
 
 }
 
