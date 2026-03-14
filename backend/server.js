@@ -11,7 +11,7 @@ const app = express();
 
 // app.use(cors());
 app.use(cors({
-origin:"https://spark-vision.vercel.app"
+origin:"https://spark-vision-gamma.vercel.app/"  
 }))
 app.use(express.json());
 
