@@ -1,5 +1,4 @@
 
-
 // import {FiMapPin,FiPhone,FiMail} from "react-icons/fi"
 
 // function Contact(){
@@ -8,28 +7,30 @@
 
 // <section
 // id="contact"
-// className="py-32 bg-gray-50"
+// className="py-28 bg-gray-50"
 // >
 
 // <div className="max-w-7xl mx-auto px-8">
 
-// <h2 className="text-5xl font-bold text-center mb-16 text-gray-900">
+// <h2 className="text-4xl font-bold text-center mb-16 text-gray-900">
 // Start Your Transformation
 // </h2>
 
-// <div className="grid md:grid-cols-2 gap-16">
+// <div className="grid md:grid-cols-2 gap-14">
 
-// {/* LOCATIONS */}
+// {/* LOCATION SECTION */}
 
 // <div className="space-y-8">
 
-// {/* MUMBAI */}
+// {/* LOCATION CARD */}
 
-// <div className="bg-white p-8 rounded-xl shadow-md flex gap-5">
+// <div className="bg-white p-7 rounded-xl shadow-md flex gap-5
+// hover:shadow-xl hover:-translate-y-1 transition duration-300">
 
-// <div className="bg-teal-100 p-3 rounded-lg h-fit">
+// <div className="bg-teal-100 p-3 rounded-lg h-fit
+// hover:bg-teal-500 transition">
 
-// <FiMapPin className="text-teal-600 text-xl"/>
+// <FiMapPin className="text-teal-600 text-xl hover:text-white transition"/>
 
 // </div>
 
@@ -46,7 +47,7 @@
 // Bandra Kurla Complex, Mumbai MH 400051
 // </p>
 
-// <div className="flex items-center gap-2 mt-3 text-gray-500">
+// <div className="flex items-center gap-2 mt-3 text-gray-500 hover:text-gray-800 transition">
 
 // <FiPhone/>
 
@@ -54,7 +55,7 @@
 
 // </div>
 
-// <div className="flex items-center gap-2 text-gray-500">
+// <div className="flex items-center gap-2 text-gray-500 hover:text-gray-800 transition">
 
 // <FiMail/>
 
@@ -69,11 +70,12 @@
 
 // {/* CHANDIGARH */}
 
-// <div className="bg-white p-8 rounded-xl shadow-md flex gap-5">
+// <div className="bg-white p-7 rounded-xl shadow-md flex gap-5
+// hover:shadow-xl hover:-translate-y-1 transition duration-300">
 
-// <div className="bg-teal-100 p-3 rounded-lg h-fit">
+// <div className="bg-teal-100 p-3 rounded-lg h-fit hover:bg-teal-500 transition">
 
-// <FiMapPin className="text-teal-600 text-xl"/>
+// <FiMapPin className="text-teal-600 text-xl hover:text-white transition"/>
 
 // </div>
 
@@ -90,7 +92,7 @@
 // IT Park Sector 22 Chandigarh
 // </p>
 
-// <div className="flex items-center gap-2 mt-3 text-gray-500">
+// <div className="flex items-center gap-2 mt-3 text-gray-500 hover:text-gray-800 transition">
 
 // <FiPhone/>
 
@@ -98,7 +100,7 @@
 
 // </div>
 
-// <div className="flex items-center gap-2 text-gray-500">
+// <div className="flex items-center gap-2 text-gray-500 hover:text-gray-800 transition">
 
 // <FiMail/>
 
@@ -113,11 +115,12 @@
 
 // {/* RAJASTHAN */}
 
-// <div className="bg-white p-8 rounded-xl shadow-md flex gap-5">
+// <div className="bg-white p-7 rounded-xl shadow-md flex gap-5
+// hover:shadow-xl hover:-translate-y-1 transition duration-300">
 
-// <div className="bg-teal-100 p-3 rounded-lg h-fit">
+// <div className="bg-teal-100 p-3 rounded-lg h-fit hover:bg-teal-500 transition">
 
-// <FiMapPin className="text-teal-600 text-xl"/>
+// <FiMapPin className="text-teal-600 text-xl hover:text-white transition"/>
 
 // </div>
 
@@ -134,7 +137,7 @@
 // Mahindra SEZ Jaipur
 // </p>
 
-// <div className="flex items-center gap-2 mt-3 text-gray-500">
+// <div className="flex items-center gap-2 mt-3 text-gray-500 hover:text-gray-800 transition">
 
 // <FiPhone/>
 
@@ -142,7 +145,7 @@
 
 // </div>
 
-// <div className="flex items-center gap-2 text-gray-500">
+// <div className="flex items-center gap-2 text-gray-500 hover:text-gray-800 transition">
 
 // <FiMail/>
 
@@ -157,7 +160,7 @@
 // </div>
 
 
-// {/* FORM */}
+// {/* CONTACT FORM */}
 
 // <div className="bg-white p-10 rounded-xl shadow-md">
 
@@ -166,7 +169,7 @@
 // </h3>
 
 // <p className="text-gray-500 mb-8">
-// Discuss your IT strategy, SAP implementation or analytics needs with our experts.
+// Discuss your IT strategy, SAP implementation, or analytics needs with our experts.
 // </p>
 
 // <form className="space-y-5">
@@ -174,31 +177,32 @@
 // <div className="grid grid-cols-2 gap-4">
 
 // <input
-// placeholder="John Doe"
-// className="border rounded-lg p-3"
+// placeholder="Full Name"
+// className="border rounded-lg p-3 focus:ring-2 focus:ring-teal-400 outline-none"
 // />
 
 // <input
-// placeholder="Acme Corp"
-// className="border rounded-lg p-3"
+// placeholder="Company"
+// className="border rounded-lg p-3 focus:ring-2 focus:ring-teal-400 outline-none"
 // />
 
 // </div>
 
 // <input
-// placeholder="john@acme.com"
-// className="border rounded-lg p-3 w-full"
+// placeholder="Business Email"
+// className="border rounded-lg p-3 w-full focus:ring-2 focus:ring-teal-400 outline-none"
 // />
 
 // <textarea
 // rows="4"
 // placeholder="Describe your project requirements..."
-// className="border rounded-lg p-3 w-full"
+// className="border rounded-lg p-3 w-full focus:ring-2 focus:ring-teal-400 outline-none"
 // />
 
 // <button
 // className="w-full py-4 rounded-lg text-white font-semibold
-// bg-gradient-to-r from-teal-500 to-orange-500 hover:opacity-90"
+// bg-gradient-to-r from-teal-500 to-orange-500
+// hover:opacity-90 transition"
 // >
 
 // Send Message ✈
@@ -221,16 +225,56 @@
 
 // export default Contact
 
-import {FiMapPin,FiPhone,FiMail} from "react-icons/fi"
+import { FiMapPin, FiPhone, FiMail } from "react-icons/fi"
+import axios from "axios"
+import { useState } from "react"
 
-function Contact(){
+function Contact() {
+
+const [formData, setFormData] = useState({
+name: "",
+company: "",
+email: "",
+message: ""
+})
+
+const handleChange = (e) => {
+setFormData({
+...formData,
+[e.target.name]: e.target.value
+})
+}
+
+const handleSubmit = async (e) => {
+e.preventDefault()
+
+try {
+
+await axios.post(
+`${import.meta.env.VITE_API_URL}/api/contact`,
+formData
+)
+
+alert("Consultation request sent successfully!")
+
+setFormData({
+name:"",
+company:"",
+email:"",
+message:""
+})
+
+} catch (error) {
+
+alert("Error sending message. Please try again.")
+
+}
+
+}
 
 return(
 
-<section
-id="contact"
-className="py-28 bg-gray-50"
->
+<section id="contact" className="py-28 bg-gray-50">
 
 <div className="max-w-7xl mx-auto px-8">
 
@@ -240,17 +284,17 @@ Start Your Transformation
 
 <div className="grid md:grid-cols-2 gap-14">
 
-{/* LOCATION SECTION */}
+
+{/* LOCATIONS */}
 
 <div className="space-y-8">
 
-{/* LOCATION CARD */}
 
-<div className="bg-white p-7 rounded-xl shadow-md flex gap-5
-hover:shadow-xl hover:-translate-y-1 transition duration-300">
+{/* MUMBAI */}
 
-<div className="bg-teal-100 p-3 rounded-lg h-fit
-hover:bg-teal-500 transition">
+<div className="bg-white p-7 rounded-xl shadow-md flex gap-5 hover:shadow-xl hover:-translate-y-1 transition duration-300">
+
+<div className="bg-teal-100 p-3 rounded-lg h-fit hover:bg-teal-500 transition">
 
 <FiMapPin className="text-teal-600 text-xl hover:text-white transition"/>
 
@@ -270,19 +314,11 @@ Bandra Kurla Complex, Mumbai MH 400051
 </p>
 
 <div className="flex items-center gap-2 mt-3 text-gray-500 hover:text-gray-800 transition">
-
-<FiPhone/>
-
-+91 22 6123 4567
-
+<FiPhone/> +91 22 6123 4567
 </div>
 
 <div className="flex items-center gap-2 text-gray-500 hover:text-gray-800 transition">
-
-<FiMail/>
-
-mumbai@sparkvision.co.in
-
+<FiMail/> mumbai@sparkvision.co.in
 </div>
 
 </div>
@@ -292,8 +328,7 @@ mumbai@sparkvision.co.in
 
 {/* CHANDIGARH */}
 
-<div className="bg-white p-7 rounded-xl shadow-md flex gap-5
-hover:shadow-xl hover:-translate-y-1 transition duration-300">
+<div className="bg-white p-7 rounded-xl shadow-md flex gap-5 hover:shadow-xl hover:-translate-y-1 transition duration-300">
 
 <div className="bg-teal-100 p-3 rounded-lg h-fit hover:bg-teal-500 transition">
 
@@ -315,19 +350,11 @@ IT Park Sector 22 Chandigarh
 </p>
 
 <div className="flex items-center gap-2 mt-3 text-gray-500 hover:text-gray-800 transition">
-
-<FiPhone/>
-
-+91 172 456 7890
-
+<FiPhone/> +91 172 456 7890
 </div>
 
 <div className="flex items-center gap-2 text-gray-500 hover:text-gray-800 transition">
-
-<FiMail/>
-
-chd@sparkvision.co.in
-
+<FiMail/> chd@sparkvision.co.in
 </div>
 
 </div>
@@ -337,8 +364,7 @@ chd@sparkvision.co.in
 
 {/* RAJASTHAN */}
 
-<div className="bg-white p-7 rounded-xl shadow-md flex gap-5
-hover:shadow-xl hover:-translate-y-1 transition duration-300">
+<div className="bg-white p-7 rounded-xl shadow-md flex gap-5 hover:shadow-xl hover:-translate-y-1 transition duration-300">
 
 <div className="bg-teal-100 p-3 rounded-lg h-fit hover:bg-teal-500 transition">
 
@@ -360,19 +386,11 @@ Mahindra SEZ Jaipur
 </p>
 
 <div className="flex items-center gap-2 mt-3 text-gray-500 hover:text-gray-800 transition">
-
-<FiPhone/>
-
-+91 141 789 0123
-
+<FiPhone/> +91 141 789 0123
 </div>
 
 <div className="flex items-center gap-2 text-gray-500 hover:text-gray-800 transition">
-
-<FiMail/>
-
-jaipur@sparkvision.co.in
-
+<FiMail/> jaipur@sparkvision.co.in
 </div>
 
 </div>
@@ -394,37 +412,53 @@ Request a Consultation
 Discuss your IT strategy, SAP implementation, or analytics needs with our experts.
 </p>
 
-<form className="space-y-5">
+
+<form onSubmit={handleSubmit} className="space-y-5">
+
 
 <div className="grid grid-cols-2 gap-4">
 
 <input
+name="name"
+value={formData.name}
+onChange={handleChange}
 placeholder="Full Name"
 className="border rounded-lg p-3 focus:ring-2 focus:ring-teal-400 outline-none"
 />
 
 <input
+name="company"
+value={formData.company}
+onChange={handleChange}
 placeholder="Company"
 className="border rounded-lg p-3 focus:ring-2 focus:ring-teal-400 outline-none"
 />
 
 </div>
 
+
 <input
+name="email"
+value={formData.email}
+onChange={handleChange}
 placeholder="Business Email"
 className="border rounded-lg p-3 w-full focus:ring-2 focus:ring-teal-400 outline-none"
 />
 
+
 <textarea
+name="message"
+value={formData.message}
+onChange={handleChange}
 rows="4"
 placeholder="Describe your project requirements..."
 className="border rounded-lg p-3 w-full focus:ring-2 focus:ring-teal-400 outline-none"
 />
 
+
 <button
-className="w-full py-4 rounded-lg text-white font-semibold
-bg-gradient-to-r from-teal-500 to-orange-500
-hover:opacity-90 transition"
+type="submit"
+className="w-full py-4 rounded-lg text-white font-semibold bg-gradient-to-r from-teal-500 to-orange-500 hover:opacity-90 transition"
 >
 
 Send Message ✈
