@@ -105,7 +105,7 @@ const services = [
 {
 title:"Cloud Computing Services",
 desc:"We help enterprises modernize infrastructure using secure and scalable cloud platforms.",
-img:"https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200",
+img:"https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2000",
 link:"/solutions/cloud"
 },
 
