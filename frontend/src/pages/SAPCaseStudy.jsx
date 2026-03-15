@@ -92,7 +92,7 @@ className="h-36 w-full object-cover rounded-lg mb-6"
 <img
 // src="https://images.unsplash.com/photo-1565514020179-026b92b2d3c8?q=80&w=1400"
 // className="rounded-2xl shadow-xl"
-src="https://images.unsplash.com/photo-1581091215367-59ab6d4b8b0c?auto=format&fit=crop&w=1400&q=80"
+src="https://images.unsplash.com/photo-1526378722484-bd91ca387e72?q=80&w=2000"
 alt="Manufacturing digital transformation"
 className="rounded-2xl shadow-xl w-full h-[420px] object-cover"
 />
