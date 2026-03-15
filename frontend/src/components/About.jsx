@@ -12,17 +12,17 @@ return(
 About Spark Vision Consulting
 </h2>
 
-<p className="text-gray-600 mb-4">
+<p className="text-gray-800 mb-4">
 Spark Vision Consulting helps enterprises accelerate digital transformation 
 through SAP modernization, data analytics, and custom technology solutions.
 </p>
 
-<p className="text-gray-600 mb-4">
+<p className="text-gray-800 mb-4">
 We specialize in helping manufacturing, retail, and BFSI organizations 
 modernize legacy systems and unlock real-time operational insights.
 </p>
 
-<p className="text-gray-600">
+<p className="text-gray-800">
 Our approach combines strategic consulting, enterprise technology, and 
 data-driven decision making to deliver measurable business outcomes.
 </p>
@@ -30,7 +30,7 @@ data-driven decision making to deliver measurable business outcomes.
 </div>
 
 <div className="bg-gray-100 rounded-xl h-80 flex items-center justify-center">
-<img src="https://i.imgur.com/GzRS9Xa.jpeg" className="h-40"/>
+<img src="https://i.imgur.com/q1S4sL9.jpeg" className="h-40"/>
 </div>
 
 </div>

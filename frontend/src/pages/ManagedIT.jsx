@@ -1,176 +1,232 @@
-// function ManagedIT(){
 
-// return(
 
-// <section className="pt-32 pb-24 max-w-5xl mx-auto px-6">
-
-// <h1 className="text-4xl font-bold text-blue-700 mb-6">
-// Managed IT Services
-// </h1>
-
-// <p className="text-gray-600 mb-6">
-// Our Managed IT Services help organizations maintain reliable, secure, and
-// high-performing technology environments. We manage infrastructure, monitor
-// systems, and provide strategic IT support so businesses can focus on growth.
-// </p>
-
-// <h2 className="text-2xl font-semibold mb-4">
-// Services Offered
-// </h2>
-
-// <ul className="space-y-3 text-gray-600 mb-10">
-
-// <li>• IT infrastructure monitoring and maintenance</li>
-
-// <li>• Network and cybersecurity management</li>
-
-// <li>• Cloud infrastructure management</li>
-
-// <li>• IT support and service desk operations</li>
-
-// <li>• Strategic IT planning and digital roadmap development</li>
-
-// </ul>
-
-// <h2 className="text-2xl font-semibold mb-4">
-// Benefits
-// </h2>
-
-// <ul className="space-y-3 text-gray-600">
-
-// <li>• Reduced IT operational costs</li>
-
-// <li>• Increased system reliability</li>
-
-// <li>• Enhanced cybersecurity protection</li>
-
-// <li>• 24/7 infrastructure monitoring</li>
-
-// </ul>
-
-// </section>
-
-// )
-
-// }
-
-// export default ManagedIT
-
-import { Link } from "react-router-dom"
-import { FiSettings, FiMonitor, FiShield, FiActivity } from "react-icons/fi"
+import PageHero from "../components/PageHero"
+import ServiceCard from "../components/ServiceCard"
+import { HashLink } from "react-router-hash-link"
+import { FiServer, FiShield, FiMonitor } from "react-icons/fi"
 
 function ManagedIT(){
 
 return(
 
-<section className="pt-32 pb-24 bg-gradient-to-b from-blue-50 to-white">
+<>
 
-<div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-10">
-
-
-<div className="text-sm text-gray-500 mb-8">
-
-<Link to="/" className="hover:text-blue-600">Home</Link>
-
-<span className="mx-2">/</span>
-
-<span>Managed IT Services</span>
-
-</div>
+<PageHero
+title="Managed IT Services"
+subtitle="Reliable IT infrastructure management that ensures security, uptime, and operational efficiency."
+image="https://images.unsplash.com/photo-1581092335397-9583eb92d232?q=80&w=2000"
+/>
 
 
-<div className="text-center mb-20">
+{/* KPI STATS */}
 
-<FiSettings className="text-blue-600 text-5xl mx-auto mb-6"/>
+<section className="py-16 bg-gray-50">
 
-<h1 className="text-4xl font-bold text-blue-700 mb-6">
-Managed IT Services
-</h1>
+<div className="max-w-7xl mx-auto px-6">
 
-<p className="max-w-2xl mx-auto text-gray-700 font-medium">
-Our managed IT services ensure reliable technology
-operations while allowing businesses to focus on growth.
+<div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
+
+<div className="bg-white rounded-2xl shadow-lg p-10">
+
+<p className="text-5xl font-bold text-blue-600">
+24/7
+</p>
+
+<p className="text-gray-800 mt-3 text-lg">
+Infrastructure Monitoring
 </p>
 
 </div>
 
+<div className="bg-white rounded-2xl shadow-lg p-10">
 
-<div className="grid md:grid-cols-3 gap-8 mb-20">
+<p className="text-5xl font-bold text-blue-600">
+50%
+</p>
 
-<div className="bg-white p-8 rounded-xl shadow-md text-center">
-<p className="text-4xl font-bold text-blue-600">24/7</p>
-<p className="font-semibold text-gray-600">Monitoring</p>
-</div>
-
-<div className="bg-white p-8 rounded-xl shadow-md text-center">
-<p className="text-4xl font-bold text-blue-600">50%</p>
-<p className="font-semibold text-gray-600">Downtime Reduction</p>
-</div>
-
-<div className="bg-white p-8 rounded-xl shadow-md text-center">
-<p className="text-4xl font-bold text-blue-600">30%</p>
-<p className="font-semibold text-gray-600">IT Cost Savings</p>
-</div>
+<p className="text-gray-800 mt-3 text-lg">
+Downtime Reduction
+</p>
 
 </div>
 
+<div className="bg-white rounded-2xl shadow-lg p-10">
 
-<div className="grid md:grid-cols-2 gap-10 mb-20">
+<p className="text-5xl font-bold text-blue-600">
+30%
+</p>
 
-<div className="flex gap-5 bg-blue-50 p-6 rounded-xl">
-
-<FiMonitor className="text-blue-600 text-3xl"/>
-
-<div>
-<h3 className="font-bold mb-2">Infrastructure Monitoring</h3>
-<p className="text-gray-600">Continuous monitoring of IT infrastructure.</p>
-</div>
+<p className="text-gray-800 mt-3 text-lg">
+Operational Cost Savings
+</p>
 
 </div>
-
-
-<div className="flex gap-5 bg-blue-50 p-6 rounded-xl">
-
-<FiShield className="text-blue-600 text-3xl"/>
-
-<div>
-<h3 className="font-bold mb-2">Cybersecurity Management</h3>
-<p className="text-gray-600">Protection against cyber threats.</p>
-</div>
-
-</div>
-
-
-<div className="flex gap-5 bg-blue-50 p-6 rounded-xl">
-
-<FiActivity className="text-blue-600 text-3xl"/>
-
-<div>
-<h3 className="font-bold mb-2">Performance Optimization</h3>
-<p className="text-gray-600">Improve system reliability.</p>
-</div>
-
-</div>
-
-</div>
-
-
-<div className="text-center">
-
-<Link
-to="/#contact"
-className="bg-gradient-to-r from-blue-700 to-blue-500 text-white px-7 py-3 rounded-lg font-semibold shadow-lg hover:scale-105 transition"
->
-
-Request Managed IT Consultation →
-
-</Link>
 
 </div>
 
 </div>
 
 </section>
+
+
+
+{/* CAPABILITIES */}
+
+<section className="py-24 bg-white">
+
+<div className="max-w-7xl mx-auto px-6">
+
+<h2 className="text-4xl font-extrabold text-center mb-16">
+Managed IT Capabilities
+</h2>
+
+
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+<ServiceCard
+title="Infrastructure Monitoring"
+desc="Continuous monitoring of enterprise infrastructure to ensure uptime, reliability, and performance."
+image="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1200"
+/>
+
+<ServiceCard
+title="IT Support & Service Desk"
+desc="Dedicated support teams resolving operational IT issues quickly to minimize disruptions."
+image="https://images.unsplash.com/photo-1593642532400-2682810df593?q=80&w=1200"
+/>
+
+<ServiceCard
+title="Cybersecurity Management"
+desc="Advanced security frameworks protecting enterprise IT systems from cyber threats."
+image="https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=1200"
+/>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+{/* TECHNOLOGY STACK */}
+
+{/* <section className="py-24 bg-gray-50">
+
+<div className="max-w-6xl mx-auto px-6 text-center">
+
+<h2 className="text-4xl font-extrabold mb-16">
+Technology Stack
+</h2>
+
+<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+
+{[
+"AWS",
+"Azure",
+"Kubernetes",
+"VMware",
+"Linux"
+].map((tech,i)=>(
+
+<div
+key={i}
+className="bg-white p-6 rounded-xl shadow hover:shadow-xl transition flex flex-col items-center"
+>
+
+<FiServer className="text-blue-600 text-4xl mb-3"/>
+
+<p className="font-semibold text-lg">
+{tech}
+</p>
+
+</div>
+
+))}
+
+</div>
+
+
+
+<HashLink
+smooth
+to="/#contact"
+className="inline-block mt-16 relative bg-blue-600 text-white px-10 py-4 rounded-lg font-semibold overflow-hidden group"
+>
+
+<span className="relative z-10">
+Request Managed IT Consultation
+</span>
+
+<span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-0 group-hover:opacity-100 transition"></span>
+
+</HashLink>
+
+</div>
+
+</section> */}
+<section className="py-28 bg-gray-50">
+
+<div className="max-w-7xl mx-auto px-6 text-center">
+
+<h2 className="text-5xl font-bold text-gray-900 mb-20">
+Managed IT Technology Stack
+</h2>
+
+<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
+
+{/* VMware */}
+<div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition">
+<img src="https://cdn.worldvectorlogo.com/logos/vmware.svg" className="h-14 mx-auto mb-4"/>
+<h3 className="font-bold text-lg mb-2">VMware</h3>
+<p className="text-gray-600 text-sm">
+Enterprise virtualization and infrastructure management.
+</p>
+</div>
+
+{/* Cisco */}
+<div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition">
+<img src="https://cdn.worldvectorlogo.com/logos/cisco-2.svg" className="h-14 mx-auto mb-4"/>
+<h3 className="font-bold text-lg mb-2">Cisco</h3>
+<p className="text-gray-600 text-sm">
+Enterprise networking infrastructure and security.
+</p>
+</div>
+
+{/* Linux */}
+<div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition">
+<img src="https://cdn.worldvectorlogo.com/logos/linux-tux.svg" className="h-14 mx-auto mb-4"/>
+<h3 className="font-bold text-lg mb-2">Linux</h3>
+<p className="text-gray-600 text-sm">
+Secure and reliable operating systems for enterprise IT.
+</p>
+</div>
+
+{/* Prometheus */}
+<div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition">
+<img src="https://cdn.worldvectorlogo.com/logos/prometheus.svg" className="h-14 mx-auto mb-4"/>
+<h3 className="font-bold text-lg mb-2">Prometheus</h3>
+<p className="text-gray-600 text-sm">
+Monitoring and alerting for enterprise infrastructure.
+</p>
+</div>
+
+{/* ServiceNow */}
+<div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition">
+<img src="https://cdn.worldvectorlogo.com/logos/servicenow.svg" className="h-14 mx-auto mb-4"/>
+<h3 className="font-bold text-lg mb-2">ServiceNow</h3>
+<p className="text-gray-600 text-sm">
+IT service management and workflow automation.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+</>
 
 )
 

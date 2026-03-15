@@ -1,246 +1,42 @@
 
-
-import { Link } from "react-router-dom"
-import { FiBarChart2, FiDatabase, FiTrendingUp, FiCpu } from "react-icons/fi"
+import PageHero from "../components/PageHero"
+import ServiceCard from "../components/ServiceCard"
+import { HashLink } from "react-router-hash-link"
+import { FiBarChart2 } from "react-icons/fi"
 
 function Analytics(){
 
 return(
 
-<section className="pt-32 pb-24 bg-gradient-to-b from-blue-50 to-white">
+<>
 
-<div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-10">
+<PageHero
+title="Data & Analytics Consulting"
+subtitle="Transform enterprise data into strategic insights through advanced analytics and AI."
+image="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2000"
+/>
 
 
-{/* BREADCRUMB */}
+<section className="py-16 bg-gray-50">
 
-<div className="text-sm text-gray-500 mb-8">
+<div className="max-w-7xl mx-auto px-6">
 
-<Link to="/" className="hover:text-blue-600">
-Home
-</Link>
+<div className="grid md:grid-cols-3 gap-10 text-center">
 
-<span className="mx-2">/</span>
-
-<span className="text-gray-700">
-Data Analytics Consulting
-</span>
-
+<div className="bg-white p-10 rounded-2xl shadow-lg">
+<p className="text-5xl font-bold text-blue-600">5x</p>
+<p className="mt-3 text-lg text-gray-800">Data Processing Speed</p>
 </div>
 
-
-{/* HERO */}
-
-<div className="text-center mb-20">
-
-<div className="text-blue-600 text-5xl mb-6 flex justify-center">
-<FiBarChart2/>
+<div className="bg-white p-10 rounded-2xl shadow-lg">
+<p className="text-5xl font-bold text-blue-600">70%</p>
+<p className="mt-3 text-lg text-gray-800">Improved Insights</p>
 </div>
 
-<h1 className="text-4xl font-bold text-blue-700 mb-6">
-Data Analytics Consulting
-</h1>
-
-<p className="max-w-2xl mx-auto text-gray-700 font-medium">
-
-We help organizations unlock the full potential of their data by
-building modern analytics platforms, real-time dashboards,
-and AI-driven insights that support better decision-making.
-
-</p>
-
+<div className="bg-white p-10 rounded-2xl shadow-lg">
+<p className="text-5xl font-bold text-blue-600">3x</p>
+<p className="mt-3 text-lg text-gray-800">Faster Decision Making</p>
 </div>
-
-
-{/* KEY BENEFITS */}
-
-<div className="grid md:grid-cols-3 gap-8 mb-20">
-
-<div className="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition text-center">
-
-<p className="text-4xl font-bold text-blue-600 mb-2">
-3x
-</p>
-
-<p className="text-gray-600 font-semibold">
-Faster Analytics
-</p>
-
-</div>
-
-<div className="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition text-center">
-
-<p className="text-4xl font-bold text-blue-600 mb-2">
-40%
-</p>
-
-<p className="text-gray-600 font-semibold">
-Improved Decision Speed
-</p>
-
-</div>
-
-<div className="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition text-center">
-
-<p className="text-4xl font-bold text-blue-600 mb-2">
-60%
-</p>
-
-<p className="text-gray-600 font-semibold">
-Reporting Automation
-</p>
-
-</div>
-
-</div>
-
-
-{/* CAPABILITIES */}
-
-<h2 className="text-2xl font-bold mb-10 text-center text-gray-900">
-Key Capabilities
-</h2>
-
-<div className="grid md:grid-cols-2 gap-10 mb-20">
-
-
-<div className="flex gap-5 bg-blue-50 p-6 rounded-xl">
-
-<div className="text-blue-600 text-3xl">
-<FiDatabase/>
-</div>
-
-<div>
-
-<h3 className="font-bold mb-2">
-Enterprise Data Platforms
-</h3>
-
-<p className="text-gray-600">
-Design and implementation of modern data lakes,
-warehouses and scalable analytics infrastructure.
-</p>
-
-</div>
-
-</div>
-
-
-<div className="flex gap-5 bg-blue-50 p-6 rounded-xl">
-
-<div className="text-blue-600 text-3xl">
-<FiTrendingUp/>
-</div>
-
-<div>
-
-<h3 className="font-bold mb-2">
-Business Intelligence
-</h3>
-
-<p className="text-gray-600">
-Interactive dashboards and reporting solutions
-that enable leadership teams to make faster decisions.
-</p>
-
-</div>
-
-</div>
-
-
-<div className="flex gap-5 bg-blue-50 p-6 rounded-xl">
-
-<div className="text-blue-600 text-3xl">
-<FiCpu/>
-</div>
-
-<div>
-
-<h3 className="font-bold mb-2">
-AI & Predictive Analytics
-</h3>
-
-<p className="text-gray-600">
-Machine learning models that forecast demand,
-optimize operations and reduce business risk.
-</p>
-
-</div>
-
-</div>
-
-
-<div className="flex gap-5 bg-blue-50 p-6 rounded-xl">
-
-<div className="text-blue-600 text-3xl">
-<FiBarChart2/>
-</div>
-
-<div>
-
-<h3 className="font-bold mb-2">
-Real-Time Insights
-</h3>
-
-<p className="text-gray-600">
-Streaming analytics platforms that provide
-real-time operational visibility.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-
-{/* TECHNOLOGY STACK */}
-
-<h2 className="text-2xl font-bold mb-8 text-center">
-Technology Stack
-</h2>
-
-<div className="flex flex-wrap justify-center gap-4 mb-20">
-
-<span className="bg-blue-100 px-4 py-2 rounded-full text-sm font-medium">
-Power BI
-</span>
-
-<span className="bg-blue-100 px-4 py-2 rounded-full text-sm font-medium">
-Tableau
-</span>
-
-<span className="bg-blue-100 px-4 py-2 rounded-full text-sm font-medium">
-Python
-</span>
-
-<span className="bg-blue-100 px-4 py-2 rounded-full text-sm font-medium">
-Snowflake
-</span>
-
-<span className="bg-blue-100 px-4 py-2 rounded-full text-sm font-medium">
-AWS Analytics
-</span>
-
-<span className="bg-blue-100 px-4 py-2 rounded-full text-sm font-medium">
-Azure Data Platform
-</span>
-
-</div>
-
-
-{/* CTA */}
-
-<div className="text-center">
-
-<Link
-to="/#contact"
-className="bg-gradient-to-r from-blue-700 to-blue-500 text-white px-7 py-3 rounded-lg font-semibold shadow-lg hover:scale-105 transition"
->
-
-Start Your Analytics Transformation →
-
-</Link>
 
 </div>
 
@@ -248,8 +44,184 @@ Start Your Analytics Transformation →
 
 </section>
 
+
+
+<section className="py-24 bg-white">
+
+<div className="max-w-7xl mx-auto px-6">
+
+<h2 className="text-4xl font-extrabold text-center mb-16">
+Analytics Capabilities
+</h2>
+
+<div className="grid md:grid-cols-3 gap-10">
+
+<ServiceCard
+title="Data Warehousing"
+desc="Enterprise-grade data warehouses integrating operational and analytical workloads."
+image="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1200"
+/>
+
+<ServiceCard
+title="Business Intelligence"
+desc="Interactive dashboards and reporting platforms enabling real-time insights."
+image="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200"
+/>
+
+<ServiceCard
+title="Machine Learning"
+desc="Predictive analytics models that unlock new growth opportunities."
+image="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200"
+/>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section className="py-28 bg-gray-50">
+
+<div className="max-w-7xl mx-auto px-6 text-center">
+
+<h2 className="text-5xl font-bold text-gray-900 mb-20">
+Analytics Technology Stack
+</h2>
+
+<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
+
+{/* Python */}
+
+<div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition">
+
+<img
+src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+className="h-14 mx-auto mb-4"
+/>
+
+<h3 className="font-bold text-lg mb-2">
+Python
+</h3>
+
+<p className="text-gray-600 text-sm">
+Data processing, ML pipelines and enterprise analytics.
+</p>
+
+</div>
+
+
+{/* Spark */}
+
+<div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition">
+
+<img
+src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg"
+className="h-14 mx-auto mb-4"
+/>
+
+<h3 className="font-bold text-lg mb-2">
+Apache Spark
+</h3>
+
+<p className="text-gray-600 text-sm">
+Distributed big data processing and high-performance analytics.
+</p>
+
+</div>
+
+
+{/* Power BI */}
+
+<div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition">
+
+<img
+src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg"
+className="h-14 mx-auto mb-4"
+/>
+
+<h3 className="font-bold text-lg mb-2">
+Power BI
+</h3>
+
+<p className="text-gray-600 text-sm">
+Enterprise dashboards and business intelligence reporting.
+</p>
+
+</div>
+
+
+{/* Tableau */}
+
+<div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition">
+
+<img
+src="https://cdn.worldvectorlogo.com/logos/tableau-software.svg"
+className="h-14 mx-auto mb-4"
+/>
+
+<h3 className="font-bold text-lg mb-2">
+Tableau
+</h3>
+
+<p className="text-gray-600 text-sm">
+Interactive visual analytics for strategic decision making.
+</p>
+
+</div>
+
+
+{/* Snowflake */}
+
+<div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition">
+
+<img
+src="https://upload.wikimedia.org/wikipedia/commons/3/37/Snowflake_Logo.svg"
+className="h-14 mx-auto mb-4"
+/>
+
+<h3 className="font-bold text-lg mb-2">
+Snowflake
+</h3>
+
+<p className="text-gray-600 text-sm">
+Cloud data warehouse for scalable enterprise analytics.
+</p>
+
+</div>
+
+
+{/* Hadoop */}
+
+<div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition">
+
+<img
+src="https://cdn.worldvectorlogo.com/logos/hadoop.svg"
+className="h-14 mx-auto mb-4"
+/>
+
+<h3 className="font-bold text-lg mb-2">
+Hadoop
+</h3>
+
+<p className="text-gray-600 text-sm">
+Big data storage and distributed analytics infrastructure.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+</>
+
 )
 
 }
 
 export default Analytics
+

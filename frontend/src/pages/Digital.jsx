@@ -1,176 +1,149 @@
-// function Digital(){
 
-// return(
 
-// <section className="pt-32 pb-24 max-w-5xl mx-auto px-6">
-
-// <h1 className="text-4xl font-bold text-blue-700 mb-6">
-// Digital Transformation Consulting
-// </h1>
-
-// <p className="text-gray-600 mb-6">
-// Digital transformation is about reimagining how businesses operate using modern
-// technologies. We help enterprises modernize legacy systems, redesign business
-// processes, and implement digital platforms that improve agility and innovation.
-// </p>
-
-// <h2 className="text-2xl font-semibold mb-4">
-// Our Approach
-// </h2>
-
-// <ul className="space-y-3 text-gray-600 mb-10">
-
-// <li>• Digital strategy and transformation roadmap development</li>
-
-// <li>• Enterprise system modernization</li>
-
-// <li>• Customer experience transformation</li>
-
-// <li>• Automation and intelligent workflows</li>
-
-// <li>• AI-driven business innovation</li>
-
-// </ul>
-
-// <h2 className="text-2xl font-semibold mb-4">
-// Business Outcomes
-// </h2>
-
-// <ul className="space-y-3 text-gray-600">
-
-// <li>• Faster business innovation</li>
-
-// <li>• Improved operational efficiency</li>
-
-// <li>• Enhanced customer engagement</li>
-
-// <li>• Future-ready digital infrastructure</li>
-
-// </ul>
-
-// </section>
-
-// )
-
-// }
-
-// export default Digital
-
-import { Link } from "react-router-dom"
-import { FiTrendingUp, FiCpu, FiLayers, FiZap } from "react-icons/fi"
+import PageHero from "../components/PageHero"
+import ServiceCard from "../components/ServiceCard"
+import { HashLink } from "react-router-hash-link"
+import { FiCpu } from "react-icons/fi"
 
 function Digital(){
 
 return(
 
-<section className="pt-32 pb-24 bg-gradient-to-b from-blue-50 to-white">
+<>
 
-<div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-10">
+<PageHero
+title="Digital Transformation Consulting"
+subtitle="Accelerate innovation and modernize business processes through technology."
+image="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2000"
+/>
 
 
-<div className="text-sm text-gray-500 mb-8">
+<section className="py-16 bg-gray-50">
 
-<Link to="/">Home</Link>
+<div className="max-w-7xl mx-auto px-6">
 
-<span className="mx-2">/</span>
+<div className="grid md:grid-cols-3 gap-10 text-center">
 
-<span>Digital Transformation</span>
-
+<div className="bg-white p-10 rounded-2xl shadow-lg">
+<p className="text-5xl font-bold text-blue-600">30%</p>
+<p className="mt-3 text-lg text-gray-800">Operational Efficiency</p>
 </div>
 
-
-<div className="text-center mb-20">
-
-<FiTrendingUp className="text-blue-600 text-5xl mx-auto mb-6"/>
-
-<h1 className="text-4xl font-bold text-blue-700 mb-6">
-Digital Transformation Consulting
-</h1>
-
-<p className="max-w-2xl mx-auto text-gray-700 font-medium">
-We help organizations modernize legacy systems and
-accelerate innovation through digital transformation.
-</p>
-
+<div className="bg-white p-10 rounded-2xl shadow-lg">
+<p className="text-5xl font-bold text-blue-600">2x</p>
+<p className="mt-3 text-lg text-gray-800">Innovation Speed</p>
 </div>
 
-
-<div className="grid md:grid-cols-3 gap-8 mb-20">
-
-<div className="bg-white p-8 rounded-xl shadow-md text-center">
-<p className="text-4xl font-bold text-blue-600">2x</p>
-<p className="font-semibold text-gray-600">Business Agility</p>
+<div className="bg-white p-10 rounded-2xl shadow-lg">
+<p className="text-5xl font-bold text-blue-600">50%</p>
+<p className="mt-3 text-lg text-gray-800">Process Automation</p>
 </div>
-
-<div className="bg-white p-8 rounded-xl shadow-md text-center">
-<p className="text-4xl font-bold text-blue-600">35%</p>
-<p className="font-semibold text-gray-600">Operational Efficiency</p>
-</div>
-
-<div className="bg-white p-8 rounded-xl shadow-md text-center">
-<p className="text-4xl font-bold text-blue-600">50%</p>
-<p className="font-semibold text-gray-600">Faster Innovation</p>
-</div>
-
-</div>
-
-
-<div className="grid md:grid-cols-2 gap-10 mb-20">
-
-<div className="flex gap-5 bg-blue-50 p-6 rounded-xl">
-
-<FiLayers className="text-blue-600 text-3xl"/>
-
-<div>
-<h3 className="font-bold mb-2">Enterprise Modernization</h3>
-<p className="text-gray-600">Upgrade legacy enterprise systems.</p>
-</div>
-
-</div>
-
-
-<div className="flex gap-5 bg-blue-50 p-6 rounded-xl">
-
-<FiCpu className="text-blue-600 text-3xl"/>
-
-<div>
-<h3 className="font-bold mb-2">Automation</h3>
-<p className="text-gray-600">Automate business workflows.</p>
-</div>
-
-</div>
-
-
-<div className="flex gap-5 bg-blue-50 p-6 rounded-xl">
-
-<FiZap className="text-blue-600 text-3xl"/>
-
-<div>
-<h3 className="font-bold mb-2">AI Integration</h3>
-<p className="text-gray-600">Integrate AI and advanced analytics.</p>
-</div>
-
-</div>
-
-</div>
-
-
-<div className="text-center">
-
-<Link
-to="/#contact"
-className="bg-gradient-to-r from-blue-700 to-blue-500 text-white px-7 py-3 rounded-lg font-semibold shadow-lg hover:scale-105 transition"
->
-
-Start Your Digital Transformation →
-
-</Link>
 
 </div>
 
 </div>
 
 </section>
+
+
+
+<section className="py-24 bg-white">
+
+<div className="max-w-7xl mx-auto px-6">
+
+<h2 className="text-4xl font-extrabold text-center mb-16">
+Digital Transformation Services
+</h2>
+
+<div className="grid md:grid-cols-3 gap-10">
+
+<ServiceCard
+title="Process Automation"
+desc="Automate business workflows and reduce operational inefficiencies."
+image="https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=1200"
+/>
+
+<ServiceCard
+title="Customer Experience Platforms"
+desc="Build digital platforms that improve engagement and customer satisfaction."
+image="https://images.unsplash.com/photo-1556745757-8d76bdb6984b?q=80&w=1200"
+/>
+
+<ServiceCard
+title="Enterprise Integration"
+desc="Integrate enterprise systems for seamless data flow and collaboration."
+image="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200"
+/>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section className="py-28 bg-gray-50">
+
+<div className="max-w-7xl mx-auto px-6 text-center">
+
+<h2 className="text-5xl font-bold text-gray-900 mb-20">
+Digital Transformation Stack
+</h2>
+
+<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
+
+{/* SAP */}
+<div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition">
+<img src="https://cdn.worldvectorlogo.com/logos/sap-3.svg" className="h-14 mx-auto mb-4"/>
+<h3 className="font-bold text-lg mb-2">SAP</h3>
+<p className="text-gray-600 text-sm">
+Enterprise ERP transformation and business process integration.
+</p>
+</div>
+
+{/* Salesforce */}
+<div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition">
+<img src="https://cdn.worldvectorlogo.com/logos/salesforce-2.svg" className="h-14 mx-auto mb-4"/>
+<h3 className="font-bold text-lg mb-2">Salesforce</h3>
+<p className="text-gray-600 text-sm">
+Customer relationship platforms and digital engagement systems.
+</p>
+</div>
+
+{/* Power Platform */}
+<div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" className="h-14 mx-auto mb-4"/>
+<h3 className="font-bold text-lg mb-2">Power Platform</h3>
+<p className="text-gray-600 text-sm">
+Low-code automation and enterprise application development.
+</p>
+</div>
+
+{/* API Integration */}
+<div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" className="h-14 mx-auto mb-4"/>
+<h3 className="font-bold text-lg mb-2">API Integration</h3>
+<p className="text-gray-600 text-sm">
+Seamless connectivity across enterprise systems.
+</p>
+</div>
+
+{/* Automation */}
+<div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition">
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/UiPath_logo.svg" className="h-14 mx-auto mb-4"/>
+<h3 className="font-bold text-lg mb-2">Automation</h3>
+<p className="text-gray-600 text-sm">
+Business process automation and operational efficiency.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+</>
 
 )
 

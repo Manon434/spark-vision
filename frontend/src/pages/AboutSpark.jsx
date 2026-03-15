@@ -1,320 +1,339 @@
-// import { Link } from "react-router-dom"
-
-// function AboutSpark(){
-
-// return(
-
-// <section className="pt-32 pb-24 bg-white">
-
-// <div className="max-w-5xl mx-auto px-6">
 
 
-// {/* BREADCRUMB */}
-
-// <div className="text-sm text-gray-500 mb-8">
-
-// <Link to="/" className="hover:text-blue-600">
-// Home
-// </Link>
-
-// <span className="mx-2">/</span>
-
-// <span className="text-gray-700">
-// About Spark Vision
-// </span>
-
-// </div>
-
-
-// <h1 className="text-4xl font-bold text-blue-700 mb-8">
-// About Spark Vision Consulting
-// </h1>
-
-
-// {/* EXPERTISE */}
-
-// <h2 className="text-2xl font-semibold mb-4">
-// Our Expertise
-// </h2>
-
-// <p className="text-gray-600 mb-8">
-
-// At Spark Vision Consulting, our team consists of highly experienced
-// technology consultants specializing in SAP transformation, cloud
-// computing, enterprise architecture, and advanced IT infrastructure.
-
-// Our expertise enables us to design and implement solutions that
-// optimize business operations, improve scalability, and drive
-// sustainable digital growth.
-
-// </p>
-
-
-// {/* APPROACH */}
-
-// <h2 className="text-2xl font-semibold mb-4">
-// Our Approach
-// </h2>
-
-// <p className="text-gray-600 mb-8">
-
-// Every organization has unique challenges and operational requirements.
-// We take the time to deeply understand our clients' business processes,
-// technology landscape, and long-term goals.
-
-// By combining strategic consulting with technical expertise, we design
-// customized digital transformation roadmaps that deliver measurable
-// business value.
-
-// </p>
-
-
-// {/* RESULTS */}
-
-// <h2 className="text-2xl font-semibold mb-4">
-// Our Results
-// </h2>
-
-// <p className="text-gray-600 mb-8">
-
-// We focus on delivering real, measurable outcomes. From optimizing ERP
-// systems and modernizing infrastructure to streamlining enterprise
-// processes, our solutions consistently help clients improve efficiency,
-// reduce operational costs, and unlock new growth opportunities.
-
-// </p>
-
-
-// {/* MISSION */}
-
-// <h2 className="text-2xl font-semibold mb-4">
-// Our Mission
-// </h2>
-
-// <p className="text-gray-600 mb-8">
-
-// Our mission is to empower organizations through technology.
-// Spark Vision Consulting helps businesses of all sizes leverage modern
-// digital platforms, advanced analytics, and enterprise solutions to
-// reach their full potential.
-
-// </p>
-
-
-// {/* TEAM */}
-
-// <h2 className="text-2xl font-semibold mb-4">
-// Our Team
-// </h2>
-
-// <p className="text-gray-600 mb-8">
-
-// Our consultants bring years of experience across enterprise
-// technology, SAP ecosystems, and digital transformation initiatives.
-// We are passionate about helping organizations succeed and pride
-// ourselves on delivering exceptional consulting expertise.
-
-// </p>
-
-
-// {/* SERVICES */}
-
-// <h2 className="text-2xl font-semibold mb-4">
-// Our Services
-// </h2>
-
-// <p className="text-gray-600">
-
-// Our consulting services accelerate digital transformation journeys.
-// Whether it's SAP migration, greenfield implementations, or managing
-// complex digital ecosystems, our experts ensure a seamless transition
-// that supports long-term business success.
-
-// </p>
-
-// </div>
-
-// </section>
-
-// )
-
-// }
-
-// export default AboutSpark
-
-import { Link } from "react-router-dom"
-import { FiCpu, FiTarget, FiTrendingUp, FiUsers, FiLayers } from "react-icons/fi"
+import PageHero from "../components/PageHero"
+import { HashLink } from "react-router-hash-link"
 
 function AboutSpark(){
 
 return(
 
-<section className="pt-32 pb-24 bg-white">
+<>
 
-<div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-10">
-
-
-{/* BREADCRUMB */}
-
-<div className="text-sm text-gray-500 mb-10">
-
-<Link to="/" className="hover:text-blue-600">
-Home
-</Link>
-
-<span className="mx-2">/</span>
-
-<span className="text-gray-700">
-About Spark Vision
-</span>
-
-</div>
+<PageHero
+title="About Spark Vision Consulting"
+subtitle="Driving innovation at the intersection of technology and business strategy."
+image="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2000"
+/>
 
 
-{/* TITLE */}
+{/* OUR EXPERTISE */}
 
-<h1 className="text-4xl font-bold text-blue-700 mb-12 text-center">
-The Spark Behind Spark Vision
-</h1>
+<section className="py-24 bg-gray-50">
 
+<div className="max-w-7xl mx-auto px-6">
 
-{/* CARDS */}
-
-<div className="grid md:grid-cols-2 gap-10">
-
-
-{/* EXPERTISE */}
-
-<div className="bg-blue-50 p-8 rounded-xl shadow-md hover:shadow-xl transition">
-
-<div className="text-blue-600 text-3xl mb-4">
-<FiCpu/>
-</div>
-
-<h2 className="text-xl font-bold mb-3">
+<h2 className="text-4xl font-extrabold text-center mb-16">
 Our Expertise
 </h2>
 
-<p className="text-gray-700 leading-relaxed font-medium">
+<p className="text-center text-lg text-gray-800 max-w-3xl mx-auto mb-14">
+Our consultants bring deep expertise in enterprise technology,
+SAP transformation, cloud computing, data analytics, and digital platforms.
+We partner with organizations to modernize operations,
+unlock insights from data, and accelerate innovation.
+</p>
 
-Our consultants specialize in SAP ecosystems, cloud computing,
-enterprise architecture, and advanced IT infrastructure.
 
-By combining deep technical expertise with industry knowledge,
-we deliver scalable digital solutions that optimize operations
-and accelerate innovation.
+<div className="grid md:grid-cols-3 gap-10">
 
+<div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+
+<img
+src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1200"
+className="w-full h-52 object-cover"
+/>
+
+<div className="p-8">
+
+<h3 className="text-xl font-bold mb-3">
+SAP & Enterprise Systems
+</h3>
+
+<p className="text-gray-800">
+Extensive experience implementing SAP S/4HANA,
+optimizing ERP systems, and modernizing enterprise architecture.
 </p>
 
 </div>
 
-
-{/* APPROACH */}
-
-<div className="bg-blue-50 p-8 rounded-xl shadow-md hover:shadow-xl transition">
-
-<div className="text-blue-600 text-3xl mb-4">
-<FiTarget/>
 </div>
 
-<h2 className="text-xl font-bold mb-3">
-Our Approach
-</h2>
 
-<p className="text-gray-700 leading-relaxed font-medium">
+<div className="bg-white rounded-2xl shadow-lg overflow-hidden">
 
-Every business operates differently. We take the time to
-understand each client's technology landscape, operational
-challenges, and growth objectives.
+<img
+src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?q=80&w=1200"
+className="w-full h-52 object-cover"
+/>
 
-This allows us to create tailored digital transformation
-strategies that deliver measurable business impact.
+<div className="p-8">
 
+<h3 className="text-xl font-bold mb-3">
+Cloud Architecture
+</h3>
+
+<p className="text-gray-800">
+Designing scalable cloud infrastructure using AWS,
+Azure, and modern DevOps frameworks.
 </p>
 
 </div>
 
-
-{/* RESULTS */}
-
-<div className="bg-blue-50 p-8 rounded-xl shadow-md hover:shadow-xl transition">
-
-<div className="text-blue-600 text-3xl mb-4">
-<FiTrendingUp/>
 </div>
 
-<h2 className="text-xl font-bold mb-3">
-Our Results
-</h2>
 
-<p className="text-gray-700 leading-relaxed font-medium">
+<div className="bg-white rounded-2xl shadow-lg overflow-hidden">
 
-From ERP optimization and infrastructure modernization to
-process automation and analytics transformation, our work
-consistently delivers measurable improvements in efficiency,
-cost reduction, and operational performance.
+<img
+src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200"
+className="w-full h-52 object-cover"
+/>
 
+<div className="p-8">
+
+<h3 className="text-xl font-bold mb-3">
+Data & Analytics
+</h3>
+
+<p className="text-gray-800">
+Advanced analytics platforms enabling businesses
+to transform raw data into strategic insights.
 </p>
 
 </div>
 
-
-{/* TEAM */}
-
-<div className="bg-blue-50 p-8 rounded-xl shadow-md hover:shadow-xl transition">
-
-<div className="text-blue-600 text-3xl mb-4">
-<FiUsers/>
 </div>
 
-<h2 className="text-xl font-bold mb-3">
-Our Team
-</h2>
-
-<p className="text-gray-700 leading-relaxed font-medium">
-
-Our team consists of experienced consultants, enterprise
-architects, and technology specialists who have worked across
-multiple industries including manufacturing, retail, and finance.
-
-We are passionate about helping organizations succeed.
-
-</p>
-
 </div>
-
-
-</div>
-
-
-{/* MISSION */}
-
-<div className="mt-20 bg-blue-600 text-white p-10 rounded-xl text-center shadow-lg">
-
-<div className="text-3xl mb-4 flex justify-center">
-<FiLayers/>
-</div>
-
-<h2 className="text-2xl font-bold mb-4">
-Our Mission
-</h2>
-
-<p className="max-w-3xl mx-auto leading-relaxed">
-
-Our mission is to help businesses unlock their full potential
-through technology. Whether it's SAP migration, greenfield
-implementations, or complex enterprise modernization projects,
-Spark Vision Consulting ensures a smooth and successful digital
-transformation journey.
-
-</p>
-
-</div>
-
 
 </div>
 
 </section>
+
+
+
+{/* OUR APPROACH */}
+
+<section className="py-28 bg-white">
+
+<div className="max-w-7xl mx-auto px-6">
+
+<h2 className="text-5xl font-extrabold text-center mb-20">
+Our Approach
+</h2>
+
+<div className="grid md:grid-cols-3 gap-12">
+
+{/* CARD 1 */}
+
+<div className="bg-gray-50 rounded-2xl p-12 shadow hover:shadow-xl transition text-center">
+
+<img
+src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200"
+className="h-36 w-full object-cover rounded-lg mb-8"
+/>
+
+<h3 className="text-2xl font-bold mb-4">
+Understand
+</h3>
+
+<p className="text-gray-800 text-lg">
+We begin by understanding our client’s business model,
+operational challenges, and strategic goals to design
+technology solutions that deliver real impact.
+</p>
+
+</div>
+
+
+{/* CARD 2 */}
+
+<div className="bg-gray-50 rounded-2xl p-12 shadow hover:shadow-xl transition text-center">
+
+<img
+src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200"
+className="h-36 w-full object-cover rounded-lg mb-8"
+/>
+
+<h3 className="text-2xl font-bold mb-4">
+Design
+</h3>
+
+<p className="text-gray-800 text-lg">
+Our consultants design customized technology strategies
+including enterprise architecture, cloud infrastructure,
+and data platforms.
+</p>
+
+</div>
+
+
+{/* CARD 3 */}
+
+<div className="bg-gray-50 rounded-2xl p-12 shadow hover:shadow-xl transition text-center">
+
+<img
+src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1200"
+className="h-36 w-full object-cover rounded-lg mb-8"
+/>
+
+<h3 className="text-2xl font-bold mb-4">
+Deliver
+</h3>
+
+<p className="text-gray-800 text-lg">
+We implement solutions efficiently while ensuring
+scalability, security, and measurable business outcomes.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+{/* MISSION */}
+
+<section className="py-24 bg-gray-50">
+
+<div className="max-w-6xl mx-auto px-6">
+
+<div className="grid md:grid-cols-2 gap-14 items-center">
+
+<img
+src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1200"
+className="rounded-2xl shadow-lg"
+/>
+
+<div>
+
+<h2 className="text-4xl font-extrabold mb-6">
+Our Mission
+</h2>
+
+<p className="text-gray-800 text-lg leading-relaxed">
+Our mission is to empower businesses to reach their full potential
+through technology. We help organizations modernize systems,
+optimize operations, and unlock new opportunities through digital transformation.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+{/* TEAM */}
+
+<section className="py-24 bg-white">
+
+<div className="max-w-7xl mx-auto px-6">
+
+<h2 className="text-4xl font-extrabold text-center mb-16">
+Our Team
+</h2>
+
+<div className="grid md:grid-cols-3 gap-10">
+
+
+<div className="bg-gray-50 rounded-2xl shadow overflow-hidden">
+
+<img
+src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1200"
+className="w-full h-60 object-cover"
+/>
+
+<div className="p-8 text-center">
+
+<h3 className="text-xl font-bold">
+Enterprise Consultants
+</h3>
+
+<p className="text-gray-800 mt-2">
+Specialists in SAP systems, enterprise architecture,
+and large-scale digital transformation.
+</p>
+
+</div>
+
+</div>
+
+
+<div className="bg-gray-50 rounded-2xl shadow overflow-hidden">
+
+<img
+src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?q=80&w=1200"
+className="w-full h-60 object-cover"
+/>
+
+<div className="p-8 text-center">
+
+<h3 className="text-xl font-bold">
+Cloud Architects
+</h3>
+
+<p className="text-gray-800 mt-2">
+Experts designing scalable cloud infrastructure
+and modern DevOps ecosystems.
+</p>
+
+</div>
+
+</div>
+
+
+<div className="bg-gray-50 rounded-2xl shadow overflow-hidden">
+
+<img
+src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=1200"
+className="w-full h-60 object-cover"
+/>
+
+<div className="p-8 text-center">
+
+<h3 className="text-xl font-bold">
+Data Scientists
+</h3>
+
+<p className="text-gray-800 mt-2">
+Analysts and engineers transforming enterprise
+data into actionable business intelligence.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<HashLink
+smooth
+to="/#contact"
+className="block text-center mt-16 relative bg-blue-600 text-white px-10 py-4 rounded-lg font-semibold overflow-hidden group w-fit mx-auto"
+>
+
+<span className="relative z-10">
+Start Your Transformation
+</span>
+
+<span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-0 group-hover:opacity-100 transition"></span>
+
+</HashLink>
+
+</div>
+
+</section>
+
+</>
 
 )
 

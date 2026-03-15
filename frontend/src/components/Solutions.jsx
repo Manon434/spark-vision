@@ -1,95 +1,192 @@
 
+// import { Link } from "react-router-dom"
+
+// function Solutions(){
+
+// const services = [
+
+// {
+// title:"Cloud Computing Services",
+// desc:"We help enterprises modernize infrastructure using secure and scalable cloud platforms.",
+// img:"https://images.unsplash.com/photo-1451187580459-43490279c0fa",
+// link:"/solutions/cloud"
+// },
+
+// {
+// title:"Data Analytics Consulting",
+// desc:"Transform raw data into insights using advanced analytics, BI dashboards, and AI models.",
+// img:"https://images.unsplash.com/photo-1551288049-bebda4e38f71",
+// link:"/solutions/analytics"
+// },
+
+// {
+// title:"Managed IT Services",
+// desc:"Comprehensive IT support including infrastructure monitoring, maintenance, and security.",
+// img:"https://images.unsplash.com/photo-1581092921461-eab62e97a780",
+// link:"/solutions/managed"
+// },
+
+// {
+// title:"Digital Transformation",
+// desc:"Accelerate business innovation with modern technology strategies and digital platforms.",
+// img:"https://images.unsplash.com/photo-1518770660439-4636190af475",
+// link:"/solutions/digital"
+// }
+
+// ]
+
+// return(
+
+// <section id="solutions" className="py-28 bg-gray-50">
+
+// <div className="max-w-7xl mx-auto px-6">
+
+// <p className="text-blue-600 text-sm tracking-widest mb-4">
+// OUR SOLUTIONS
+// </p>
+
+// <h2 className="text-4xl font-bold text-gray-900 mb-16">
+// Technology Services That Drive Growth
+// </h2>
+
+// <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12">
+
+// {services.map((s,i)=>(
+
+// <Link key={i} to={s.link}>
+
+// <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 hover:-translate-y-2">
+
+// <img
+// src={s.img}
+// className="w-full h-64 object-cover"
+// />
+
+// <div className="p-10">
+
+// <h3 className="text-2xl font-semibold text-gray-900 mb-4">
+// {s.title}
+// </h3>
+
+// <p className="text-gray-800 text-lg">
+// {s.desc}
+// </p>
+
+// <p className="text-blue-600 font-semibold mt-6">
+// Explore Solution →
+// </p>
+
+// </div>
+
+// </div>
+
+// </Link>
+
+// ))}
+
+// </div>
+
+// </div>
+
+// </section>
+
+// )
+
+// }
+
+// export default Solutions
 
 import { Link } from "react-router-dom"
-import { FiCloud, FiBarChart2, FiSettings, FiTrendingUp } from "react-icons/fi"
 
-const solutions = [
+function Solutions(){
+
+const services = [
 
 {
 title:"Cloud Computing Services",
-icon:<FiCloud/>,
-description:"Scalable cloud infrastructure and migration services that improve operational efficiency and reduce IT costs.",
-path:"/solutions/cloud"
+desc:"We help enterprises modernize infrastructure using secure and scalable cloud platforms.",
+img:"https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200",
+link:"/solutions/cloud"
 },
 
 {
 title:"Data Analytics Consulting",
-icon:<FiBarChart2/>,
-description:"Transform enterprise data into actionable insights using modern analytics, BI dashboards and AI models.",
-path:"/solutions/analytics"
+desc:"Transform raw data into insights using advanced analytics, BI dashboards, and AI models.",
+img:"https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200",
+link:"/solutions/analytics"
 },
 
 {
 title:"Managed IT Services",
-icon:<FiSettings/>,
-description:"End-to-end IT infrastructure monitoring, management and strategic support for modern organizations.",
-path:"/solutions/managed"
+desc:"Comprehensive IT support including infrastructure monitoring, maintenance, and security.",
+img:"https://images.unsplash.com/photo-1581092921461-eab62e97a780?q=80&w=1200",
+link:"/solutions/managed"
 },
 
 {
 title:"Digital Transformation",
-icon:<FiTrendingUp/>,
-description:"Technology modernization strategies that help enterprises innovate faster and scale operations.",
-path:"/solutions/digital"
+desc:"Accelerate business innovation with modern technology strategies and digital platforms.",
+img:"https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200",
+link:"/solutions/digital"
 }
 
 ]
 
-function Solutions(){
-
 return(
 
-<section id="solutions" className="py-24 bg-blue-50">
+<section id="solutions" className="py-28 bg-gray-50">
 
 <div className="max-w-7xl mx-auto px-6">
 
-<div className="text-center mb-16">
-
-<p className="text-blue-600 text-sm tracking-widest mb-3">
+<p className="text-blue-600 text-sm tracking-widest mb-4">
 OUR SOLUTIONS
 </p>
 
-<h2 className="text-4xl font-bold text-gray-900">
-Core Competencies
+<h2 className="text-4xl font-bold text-gray-900 mb-16">
+Technology Services That Drive Growth
 </h2>
 
+<div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+
+{services.map((s,i)=>(
+
+<Link key={i} to={s.link}>
+
+<div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 hover:-translate-y-2 flex flex-col h-full">
+
+{/* IMAGE */}
+
+<div className="w-full h-64 overflow-hidden">
+
+<img
+src={s.img}
+loading="lazy"
+className="w-full h-full object-cover transition duration-500 hover:scale-105"
+/>
+
 </div>
 
-<div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+{/* CONTENT */}
 
-{solutions.map((item,index)=>(
+<div className="p-10 flex flex-col flex-grow">
 
-<div
-key={index}
-className="bg-white p-7 rounded-xl shadow-md hover:shadow-2xl hover:-translate-y-1 transition flex flex-col justify-between"
->
-
-<div>
-
-<div className="text-blue-600 text-4xl mb-5">
-{item.icon}
-</div>
-
-<h3 className="font-semibold text-lg text-gray-900 mb-3">
-{item.title}
+<h3 className="text-2xl font-semibold text-gray-900 mb-4">
+{s.title}
 </h3>
 
-<p className="text-gray-600 text-sm">
-{item.description}
+<p className="text-gray-800 text-lg leading-relaxed flex-grow">
+{s.desc}
+</p>
+
+<p className="text-blue-600 font-semibold mt-6">
+Explore Solution →
 </p>
 
 </div>
 
-<Link
-to={item.path}
-className="mt-6 font-semibold text-blue-600 flex items-center gap-1 hover:gap-2 transition"
->
-
-Explore More →
+</div>
 
 </Link>
-
-</div>
 
 ))}
 

@@ -1,362 +1,547 @@
 
 
-// import { Link } from "react-router-dom"
-
-// function SAPCaseStudy(){
-
-// return(
-
-// <section className="pt-32 pb-24 bg-white">
-
-// <div className="max-w-5xl mx-auto px-6">
-
-
-// {/* BREADCRUMB */}
-
-// <div className="text-sm text-gray-500 mb-8">
-
-// <Link to="/" className="hover:text-blue-600">
-// Home
-// </Link>
-
-// <span className="mx-2">/</span>
-
-// <span className="text-gray-700">
-// Case Study
-// </span>
-
-// </div>
-
-
-// <h1 className="text-4xl font-bold text-blue-700 mb-6">
-// SAP S/4HANA Manufacturing Transformation
-// </h1>
-
-
-// <p className="text-gray-600 mb-8">
-
-// One of North India's largest manufacturers operating multiple mills
-// and converting plants partnered with Spark Vision Consulting to
-// modernize their enterprise systems and improve operational efficiency.
-
-// </p>
-
-
-// {/* PROJECT OVERVIEW */}
-
-// <div className="bg-blue-50 p-6 rounded-lg mb-10">
-
-// <p className="mb-2">
-// 📅 <strong>Project Duration:</strong> 18 months
-// </p>
-
-// <p className="mb-2">
-// 🏭 <strong>Locations Covered:</strong> 5 mills, 2 converting plants,
-// and 8 distribution centers
-// </p>
-
-// </div>
-
-
-// {/* PROJECT SCOPE */}
-
-// <h2 className="text-2xl font-semibold mb-4">
-// Project Scope
-// </h2>
-
-// <p className="text-gray-600 mb-8">
-
-// The client faced challenges with outdated and siloed operations,
-// inefficient inventory management, and limited real-time visibility
-// into production data. The objective was to migrate from SAP ECC to
-// SAP S/4HANA to build a modern digital core capable of supporting
-// future growth and operational optimization.
-
-// </p>
-
-
-// {/* CHALLENGES */}
-
-// <h2 className="text-2xl font-semibold mb-4">
-// Key Challenges
-// </h2>
-
-// <ul className="space-y-3 text-gray-600 mb-10">
-
-// <li>• Lack of real-time production and inventory tracking</li>
-
-// <li>• Frequent stockouts and excess raw material waste</li>
-
-// <li>• Manual scheduling and inefficient procurement processes</li>
-
-// <li>• High energy consumption due to inefficient planning</li>
-
-// <li>• Siloed financial reporting across multiple plants</li>
-
-// </ul>
-
-
-// {/* SOLUTION */}
-
-// <h2 className="text-2xl font-semibold mb-4">
-// Solution Implemented
-// </h2>
-
-// <ul className="space-y-3 text-gray-600 mb-10">
-
-// <li>🔹 SAP S/4HANA core migration from legacy SAP ECC</li>
-
-// <li>🔹 SAP Production Planning (PP) for optimized scheduling</li>
-
-// <li>🔹 SAP Extended Warehouse Management (EWM)</li>
-
-// <li>🔹 SAP Materials Management (MM) automation</li>
-
-// <li>🔹 SAP Finance & Controlling (FICO) cost visibility</li>
-
-// <li>🔹 SAP Fiori dashboards for real-time operational insights</li>
-
-// </ul>
-
-
-// {/* RESULTS */}
-
-// <h2 className="text-2xl font-semibold mb-4">
-// Key Achievements
-// </h2>
-
-// <ul className="space-y-3 text-gray-600 mb-10">
-
-// <li>✔ 25% reduction in raw material waste</li>
-
-// <li>✔ 20% improvement in production efficiency</li>
-
-// <li>✔ 15% reduction in operational costs</li>
-
-// <li>✔ 12% reduction in energy consumption per ton of paper</li>
-
-// <li>✔ 30% faster order fulfillment</li>
-
-// <li>✔ 8% increase in profitability through improved cost visibility</li>
-
-// </ul>
-
-
-// {/* TECHNOLOGY */}
-
-// <h2 className="text-2xl font-semibold mb-4">
-// Technology Stack
-// </h2>
-
-// <p className="text-gray-600">
-
-// SAP S/4HANA • SAP Fiori • SAP EWM • SAP PP • SAP MM • SAP FICO •
-// IoT sensors for machine health monitoring
-
-// </p>
-
-// </div>
-
-// </section>
-
-// )
-
-// }
-
-// export default SAPCaseStudy
-
-import { Link } from "react-router-dom"
+import PageHero from "../components/PageHero"
+import { HashLink } from "react-router-hash-link"
 
 function SAPCaseStudy(){
 
 return(
 
-<section className="pt-32 pb-24 bg-gradient-to-b from-blue-50 to-white">
+<>
 
-<div className="max-w-6xl mx-auto px-6">
+<PageHero
+title="SAP S/4HANA Transformation"
+subtitle="Helping a leading manufacturing enterprise modernize operations and unlock real-time business intelligence."
+image="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?q=80&w=2000"
+/>
 
-{/* BREADCRUMB */}
 
-<div className="text-sm text-gray-500 mb-8">
+{/* CLIENT OVERVIEW */}
 
-<Link to="/" className="hover:text-blue-600">Home</Link>
+<section className="py-24 bg-gray-50">
 
-<span className="mx-2">/</span>
+<div className="max-w-7xl mx-auto px-6">
 
-<span className="text-gray-700">SAP Transformation Case Study</span>
-
-</div>
-
-{/* HERO */}
-
-<h1 className="text-4xl md:text-5xl font-bold text-blue-700 mb-6">
-SAP S/4HANA Manufacturing Transformation
-</h1>
-
-<p className="text-lg text-gray-700 mb-12 max-w-3xl">
-
-A leading North Indian manufacturing enterprise partnered with
-Spark Vision Consulting to modernize operations by migrating
-from SAP ECC to SAP S/4HANA and implementing advanced supply
-chain and financial management capabilities.
-
-</p>
-
-{/* PROJECT OVERVIEW */}
-
-<div className="grid md:grid-cols-3 gap-8 mb-20">
-
-<div className="bg-white p-8 rounded-xl shadow-md text-center">
-
-<p className="text-3xl font-bold text-blue-600">18</p>
-
-<p className="text-gray-600">Months Project Duration</p>
-
-</div>
-
-<div className="bg-white p-8 rounded-xl shadow-md text-center">
-
-<p className="text-3xl font-bold text-blue-600">5</p>
-
-<p className="text-gray-600">Manufacturing Mills</p>
-
-</div>
-
-<div className="bg-white p-8 rounded-xl shadow-md text-center">
-
-<p className="text-3xl font-bold text-blue-600">8</p>
-
-<p className="text-gray-600">Distribution Centers</p>
-
-</div>
-
-</div>
-
-{/* CHALLENGES */}
-
-<h2 className="text-2xl font-bold mb-8 text-gray-900">
-Key Challenges
+<h2 className="text-5xl font-bold text-center mb-20 text-gray-900">
+Client Overview
 </h2>
 
-<div className="grid md:grid-cols-2 gap-8 mb-20">
+<div className="grid md:grid-cols-3 gap-10">
 
-<div className="bg-white p-6 rounded-xl shadow-sm">
-Lack of real-time production and inventory tracking causing
-stockouts and excess material waste.
-</div>
+<div className="bg-white rounded-xl shadow-lg p-10 text-center">
 
-<div className="bg-white p-6 rounded-xl shadow-sm">
-Manual scheduling and procurement delays impacting
-order fulfillment timelines.
-</div>
+<img
+src="https://images.unsplash.com/photo-1581092335397-9583eb92d232?q=80&w=1200"
+className="h-36 w-full object-cover rounded-lg mb-6"
+/>
 
-<div className="bg-white p-6 rounded-xl shadow-sm">
-High energy consumption due to inefficient
-production planning.
-</div>
+<p className="text-gray-700 text-lg font-semibold">Industry</p>
 
-<div className="bg-white p-6 rounded-xl shadow-sm">
-Siloed financial reporting across mills
-making cost analysis difficult.
-</div>
-
-</div>
-
-{/* SOLUTION */}
-
-<h2 className="text-2xl font-bold mb-8 text-gray-900">
-Solution Implemented
-</h2>
-
-<div className="grid md:grid-cols-2 gap-8 mb-20">
-
-<div className="bg-blue-50 p-6 rounded-xl">
-SAP S/4HANA core migration enabling real-time
-enterprise-wide visibility.
-</div>
-
-<div className="bg-blue-50 p-6 rounded-xl">
-SAP Production Planning module optimizing
-machine utilization and schedules.
-</div>
-
-<div className="bg-blue-50 p-6 rounded-xl">
-SAP Extended Warehouse Management improving
-inventory control across locations.
-</div>
-
-<div className="bg-blue-50 p-6 rounded-xl">
-SAP Fiori dashboards delivering real-time
-analytics for operations and finance.
-</div>
-
-</div>
-
-{/* RESULTS */}
-
-<h2 className="text-2xl font-bold mb-8 text-gray-900">
-Business Impact
-</h2>
-
-<div className="grid md:grid-cols-3 gap-8 mb-20">
-
-<div className="bg-white p-8 rounded-xl shadow-md text-center">
-
-<p className="text-4xl font-bold text-blue-600">
-25%
-</p>
-
-<p className="text-gray-600">
-Raw Material Waste Reduction
+<p className="text-2xl font-bold text-blue-600 mt-2">
+Paper Manufacturing
 </p>
 
 </div>
 
-<div className="bg-white p-8 rounded-xl shadow-md text-center">
 
-<p className="text-4xl font-bold text-blue-600">
-20%
-</p>
+<div className="bg-white rounded-xl shadow-lg p-10 text-center">
 
-<p className="text-gray-600">
-Production Efficiency Improvement
-</p>
+<img
+src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200"
+className="h-36 w-full object-cover rounded-lg mb-6"
+/>
 
-</div>
+<p className="text-gray-700 text-lg font-semibold">Project Duration</p>
 
-<div className="bg-white p-8 rounded-xl shadow-md text-center">
-
-<p className="text-4xl font-bold text-blue-600">
-15%
-</p>
-
-<p className="text-gray-600">
-Operational Cost Reduction
+<p className="text-2xl font-bold text-blue-600 mt-2">
+18 Months
 </p>
 
 </div>
 
+
+<div className="bg-white rounded-xl shadow-lg p-10 text-center">
+
+<img
+src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1200"
+className="h-36 w-full object-cover rounded-lg mb-6"
+/>
+
+<p className="text-gray-700 text-lg font-semibold">Locations Covered</p>
+
+<p className="text-2xl font-bold text-blue-600 mt-2">
+5 Mills • 2 Plants • 8 DCs
+</p>
+
 </div>
-
-{/* TECHNOLOGY */}
-
-<h2 className="text-2xl font-bold mb-6">
-Technology Stack
-</h2>
-
-<div className="flex flex-wrap gap-4">
-
-<span className="bg-blue-100 px-4 py-2 rounded-full text-sm">SAP S/4HANA</span>
-<span className="bg-blue-100 px-4 py-2 rounded-full text-sm">SAP Fiori</span>
-<span className="bg-blue-100 px-4 py-2 rounded-full text-sm">SAP EWM</span>
-<span className="bg-blue-100 px-4 py-2 rounded-full text-sm">SAP PP</span>
-<span className="bg-blue-100 px-4 py-2 rounded-full text-sm">SAP FICO</span>
 
 </div>
 
 </div>
 
 </section>
+
+
+
+{/* PROJECT SCOPE */}
+
+<section className="py-28 bg-white">
+
+<div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+
+<img
+// src="https://images.unsplash.com/photo-1565514020179-026b92b2d3c8?q=80&w=1400"
+// className="rounded-2xl shadow-xl"
+src="https://images.unsplash.com/photo-1581091215367-59ab6d4b8b0c?auto=format&fit=crop&w=1400&q=80"
+alt="Manufacturing digital transformation"
+className="rounded-2xl shadow-xl w-full h-[420px] object-cover"
+/>
+
+<div>
+
+<h2 className="text-5xl font-bold mb-8 text-gray-900">
+Project Scope
+</h2>
+
+<p className="text-xl text-gray-700 leading-relaxed">
+
+The client faced fragmented systems, siloed data,
+and inefficient inventory management across mills
+and plants.
+
+Spark Vision implemented SAP S/4HANA to create
+a modern digital core enabling real-time
+decision making, operational visibility,
+and optimized supply chains.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+{/* KEY CHALLENGES */}
+
+<section className="py-24 bg-gray-50">
+
+<div className="max-w-7xl mx-auto px-6">
+
+<h2 className="text-5xl font-bold text-center mb-20 text-gray-900">
+Key Challenges
+</h2>
+
+<div className="grid md:grid-cols-2 gap-12">
+
+
+{/* CHALLENGE 1 */}
+
+<div className="bg-white rounded-xl shadow-lg overflow-hidden">
+
+<img
+src="https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1200"
+className="h-48 w-full object-cover"
+/>
+
+<div className="p-8">
+
+<h3 className="text-2xl font-bold mb-4">
+Lack of Real-Time Production Visibility
+</h3>
+
+<p className="text-gray-700 text-lg">
+Production managers lacked centralized dashboards to monitor
+machine utilization, production throughput, and inventory levels.
+This resulted in delayed decision making and inefficient
+production planning across multiple mills.
+</p>
+
+</div>
+
+</div>
+
+
+{/* CHALLENGE 2 */}
+
+<div className="bg-white rounded-xl shadow-lg overflow-hidden">
+
+<img
+src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?q=80&w=1200"
+className="h-48 w-full object-cover"
+/>
+
+<div className="p-8">
+
+<h3 className="text-2xl font-bold mb-4">
+Manual Procurement & Scheduling
+</h3>
+
+<p className="text-gray-700 text-lg">
+Procurement and production scheduling processes were largely
+manual and disconnected across departments. This caused
+frequent delays in order fulfillment and inefficient use
+of raw materials.
+</p>
+
+</div>
+
+</div>
+
+
+{/* CHALLENGE 3 */}
+
+<div className="bg-white rounded-xl shadow-lg overflow-hidden">
+
+<img
+src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1200"
+className="h-48 w-full object-cover"
+/>
+
+<div className="p-8">
+
+<h3 className="text-2xl font-bold mb-4">
+High Energy Consumption
+</h3>
+
+<p className="text-gray-700 text-lg">
+Production facilities experienced high energy consumption due
+to inefficient machine scheduling and lack of predictive
+maintenance systems to monitor machine health.
+</p>
+
+</div>
+
+</div>
+
+
+{/* CHALLENGE 4 */}
+
+<div className="bg-white rounded-xl shadow-lg overflow-hidden">
+
+<img
+src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1200"
+className="h-48 w-full object-cover"
+/>
+
+<div className="p-8">
+
+<h3 className="text-2xl font-bold mb-4">
+Fragmented Financial Reporting
+</h3>
+
+<p className="text-gray-700 text-lg">
+Financial data across mills and plants was stored in
+separate systems, making it difficult for leadership
+to gain real-time cost visibility and profitability insights.
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+{/* SOLUTION IMPLEMENTED */}
+
+<section className="py-24 bg-white">
+
+<div className="max-w-7xl mx-auto px-6">
+
+<h2 className="text-5xl font-bold text-center mb-20 text-gray-900">
+Solution Architecture
+</h2>
+
+<div className="grid md:grid-cols-3 gap-10">
+
+<div className="bg-gray-50 p-10 rounded-xl shadow">
+
+<h3 className="text-xl font-bold mb-3">SAP S/4HANA</h3>
+
+<p className="text-gray-700">
+Enterprise digital core enabling real-time analytics
+and integrated operations.
+</p>
+
+</div>
+
+
+<div className="bg-gray-50 p-10 rounded-xl shadow">
+
+<h3 className="text-xl font-bold mb-3">Production Planning</h3>
+
+<p className="text-gray-700">
+SAP PP optimized machine utilization
+and automated production scheduling.
+</p>
+
+</div>
+
+
+<div className="bg-gray-50 p-10 rounded-xl shadow">
+
+<h3 className="text-xl font-bold mb-3">Warehouse Management</h3>
+
+<p className="text-gray-700">
+SAP EWM improved inventory visibility
+across all plants and distribution centers.
+</p>
+
+</div>
+
+
+<div className="bg-gray-50 p-10 rounded-xl shadow">
+
+<h3 className="text-xl font-bold mb-3">Materials Management</h3>
+
+<p className="text-gray-700">
+SAP MM automated procurement workflows
+and raw material tracking.
+</p>
+
+</div>
+
+
+<div className="bg-gray-50 p-10 rounded-xl shadow">
+
+<h3 className="text-xl font-bold mb-3">Financial Control</h3>
+
+<p className="text-gray-700">
+SAP FICO enabled mill-wise profitability
+and cost transparency.
+</p>
+
+</div>
+
+
+<div className="bg-gray-50 p-10 rounded-xl shadow">
+
+<h3 className="text-xl font-bold mb-3">IoT Monitoring</h3>
+
+<p className="text-gray-700">
+IoT sensors monitored machine health
+to prevent production downtime.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+{/* SOLUTION ARCHITECTURE FLOW */}
+
+<section className="py-28 bg-white">
+
+<div className="max-w-6xl mx-auto px-6 text-center">
+
+<h2 className="text-5xl font-bold mb-20 text-gray-900">
+Digital Transformation Architecture
+</h2>
+
+<div className="grid md:grid-cols-5 gap-6 items-center">
+
+<div className="bg-blue-50 p-8 rounded-xl shadow">
+
+<h3 className="font-bold text-lg mb-2">Production</h3>
+
+<p className="text-gray-700">
+IoT Sensors
+</p>
+
+</div>
+
+<div className="text-3xl font-bold text-blue-500">→</div>
+
+<div className="bg-blue-50 p-8 rounded-xl shadow">
+
+<h3 className="font-bold text-lg mb-2">ERP Core</h3>
+
+<p className="text-gray-700">
+SAP S/4HANA
+</p>
+
+</div>
+
+<div className="text-3xl font-bold text-blue-500">→</div>
+
+<div className="bg-blue-50 p-8 rounded-xl shadow">
+
+<h3 className="font-bold text-lg mb-2">Analytics</h3>
+
+<p className="text-gray-700">
+SAP Fiori Dashboards
+</p>
+
+</div>
+
+</div>
+
+<p className="mt-12 text-lg text-gray-700 max-w-3xl mx-auto">
+
+The architecture integrated shop floor data, enterprise systems,
+and analytics dashboards to provide leadership with real-time
+operational insights across plants and distribution centers.
+
+</p>
+
+</div>
+
+</section>
+
+
+
+{/* RESULTS */}
+
+<section className="py-28 bg-blue-50">
+
+<div className="max-w-7xl mx-auto px-6">
+
+<h2 className="text-5xl font-bold text-center mb-20 text-gray-900">
+Transformation Impact
+</h2>
+
+<div className="grid md:grid-cols-3 gap-10 text-center">
+
+<div className="bg-white p-12 rounded-xl shadow-lg">
+
+<p className="text-5xl font-bold text-blue-600">25%</p>
+
+<p className="mt-4 text-gray-700 text-lg">
+Raw Material Waste Reduction
+</p>
+
+</div>
+
+
+<div className="bg-white p-12 rounded-xl shadow-lg">
+
+<p className="text-5xl font-bold text-blue-600">20%</p>
+
+<p className="mt-4 text-gray-700 text-lg">
+Production Efficiency Increase
+</p>
+
+</div>
+
+
+<div className="bg-white p-12 rounded-xl shadow-lg">
+
+<p className="text-5xl font-bold text-blue-600">30%</p>
+
+<p className="mt-4 text-gray-700 text-lg">
+Faster Order Fulfillment
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+{/* TECHNOLOGY STACK */}
+
+<section className="py-24 bg-white">
+
+<div className="max-w-6xl mx-auto px-6 text-center">
+
+<h2 className="text-5xl font-bold mb-16 text-gray-900">
+Technology Stack
+</h2>
+
+<div className="flex flex-wrap justify-center gap-6">
+
+{[
+"SAP S/4HANA",
+"SAP Fiori",
+"SAP EWM",
+"SAP PP",
+"SAP MM",
+"SAP FICO",
+"IoT Sensors"
+].map((tech,i)=>(
+
+<div
+key={i}
+className="bg-blue-100 text-blue-700 px-8 py-4 rounded-full text-lg font-semibold"
+>
+{tech}
+</div>
+
+))}
+
+</div>
+
+
+<HashLink
+smooth
+to="/#contact"
+className="inline-block mt-16 bg-blue-600 text-white px-12 py-5 text-lg rounded-lg font-semibold hover:bg-blue-700 transition"
+>
+
+Start Your SAP Transformation
+
+</HashLink>
+
+</div>
+
+</section>
+{/* TECHNOLOGY STACK */}
+
+{/* <section className="py-28 bg-gray-50">
+
+<div className="max-w-6xl mx-auto px-6 text-center">
+
+<h2 className="text-5xl font-bold mb-20 text-gray-900">
+Technology Stack
+</h2>
+
+<div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+
+{[
+"SAP S/4HANA",
+"SAP Fiori",
+"SAP EWM",
+"SAP PP",
+"SAP MM",
+"SAP FICO",
+"IoT Sensors",
+"Analytics Dashboards"
+].map((tech,i)=>(
+
+<div
+key={i}
+className="bg-white p-10 rounded-xl shadow hover:shadow-xl transition"
+>
+
+<p className="text-xl font-semibold text-gray-800">
+{tech}
+</p>
+
+</div>
+
+))}
+
+</div>
+
+</div>
+
+</section> */}
+</>
 
 )
 

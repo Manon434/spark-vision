@@ -1,268 +1,213 @@
-// function Cloud(){
 
-// return(
 
-// <section className="pt-32 pb-24 max-w-5xl mx-auto px-6">
-
-// <h1 className="text-4xl font-bold text-blue-700 mb-6">
-// Cloud Computing Services
-// </h1>
-
-// <p className="text-gray-600 mb-6">
-
-// Our cloud consulting services help organizations modernize infrastructure,
-// optimize costs and improve scalability by leveraging modern cloud platforms
-// such as AWS, Azure and Google Cloud.
-
-// </p>
-
-// <h2 className="text-2xl font-semibold mb-4">
-// What We Offer
-// </h2>
-
-// <ul className="space-y-3 text-gray-600">
-
-// <li>• Cloud infrastructure architecture and migration</li>
-
-// <li>• Hybrid and multi-cloud environments</li>
-
-// <li>• DevOps automation and CI/CD pipelines</li>
-
-// <li>• Cloud security and compliance solutions</li>
-
-// <li>• Cost optimization and performance monitoring</li>
-
-// </ul>
-
-// </section>
-
-// )
-
-// }
-
-// export default Cloud
-
-import { Link } from "react-router-dom"
-import { FiCloud, FiServer, FiShield, FiCpu } from "react-icons/fi"
+import PageHero from "../components/PageHero"
+import ServiceCard from "../components/ServiceCard"
+import { HashLink } from "react-router-hash-link"
+import { FiCloud, FiServer, FiLock } from "react-icons/fi"
 
 function Cloud(){
 
 return(
 
-<section className="pt-32 pb-24 bg-gradient-to-b from-blue-50 to-white">
+<>
 
-<div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-10">
-
-
-{/* BREADCRUMB */}
-
-<div className="text-sm text-gray-500 mb-8">
-
-<Link to="/" className="hover:text-blue-600">
-Home
-</Link>
-
-<span className="mx-2">/</span>
-
-<span className="text-gray-700">
-Cloud Computing Services
-</span>
-
-</div>
+<PageHero
+title="Cloud Computing Solutions"
+subtitle="Build scalable and secure cloud infrastructure that powers innovation and modern enterprise operations."
+image="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2000"
+/>
 
 
-{/* HERO */}
+{/* KPI STATS */}
 
-<div className="text-center mb-20">
+<section className="py-16 bg-gray-50">
 
-<div className="text-blue-600 text-5xl mb-6 flex justify-center">
-<FiCloud/>
-</div>
+<div className="max-w-7xl mx-auto px-6">
 
-<h1 className="text-4xl font-bold text-blue-700 mb-6">
-Cloud Computing Services
-</h1>
+<div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
 
-<p className="max-w-2xl mx-auto text-gray-700 font-medium">
+<div className="bg-white rounded-2xl shadow-lg p-10">
 
-We design scalable cloud architectures that improve operational
-efficiency, reduce infrastructure costs, and enable businesses
-to innovate faster.
-
-</p>
+<p className="text-5xl font-bold text-blue-600">40%</p>
+<p className="text-gray-800 mt-3 text-lg">Infrastructure Cost Reduction</p>
 
 </div>
 
+<div className="bg-white rounded-2xl shadow-lg p-10">
 
-{/* METRICS */}
-
-<div className="grid md:grid-cols-3 gap-8 mb-20">
-
-<div className="bg-white p-8 rounded-xl shadow-md text-center">
-
-<p className="text-4xl font-bold text-blue-600 mb-2">
-40%
-</p>
-
-<p className="font-semibold text-gray-600">
-Infrastructure Cost Reduction
-</p>
+<p className="text-5xl font-bold text-blue-600">3x</p>
+<p className="text-gray-800 mt-3 text-lg">Deployment Speed</p>
 
 </div>
 
-<div className="bg-white p-8 rounded-xl shadow-md text-center">
+<div className="bg-white rounded-2xl shadow-lg p-10">
 
-<p className="text-4xl font-bold text-blue-600 mb-2">
-3x
-</p>
-
-<p className="font-semibold text-gray-600">
-Scalability Improvement
-</p>
+<p className="text-5xl font-bold text-blue-600">99.9%</p>
+<p className="text-gray-800 mt-3 text-lg">Cloud Reliability</p>
 
 </div>
-
-<div className="bg-white p-8 rounded-xl shadow-md text-center">
-
-<p className="text-4xl font-bold text-blue-600 mb-2">
-99.9%
-</p>
-
-<p className="font-semibold text-gray-600">
-System Reliability
-</p>
-
-</div>
-
-</div>
-
-
-{/* CAPABILITIES */}
-
-<h2 className="text-2xl font-bold mb-10 text-center">
-Key Capabilities
-</h2>
-
-<div className="grid md:grid-cols-2 gap-10 mb-20">
-
-
-<div className="flex gap-5 bg-blue-50 p-6 rounded-xl">
-
-<FiServer className="text-blue-600 text-3xl"/>
-
-<div>
-
-<h3 className="font-bold mb-2">
-Cloud Architecture
-</h3>
-
-<p className="text-gray-600">
-Design and deployment of scalable cloud infrastructure
-using modern cloud platforms.
-</p>
-
-</div>
-
-</div>
-
-
-<div className="flex gap-5 bg-blue-50 p-6 rounded-xl">
-
-<FiShield className="text-blue-600 text-3xl"/>
-
-<div>
-
-<h3 className="font-bold mb-2">
-Cloud Security
-</h3>
-
-<p className="text-gray-600">
-Enterprise-grade security frameworks ensuring
-compliance and risk protection.
-</p>
-
-</div>
-
-</div>
-
-
-<div className="flex gap-5 bg-blue-50 p-6 rounded-xl">
-
-<FiCpu className="text-blue-600 text-3xl"/>
-
-<div>
-
-<h3 className="font-bold mb-2">
-DevOps Automation
-</h3>
-
-<p className="text-gray-600">
-Automated CI/CD pipelines enabling faster
-software delivery cycles.
-</p>
-
-</div>
-
-</div>
-
-
-<div className="flex gap-5 bg-blue-50 p-6 rounded-xl">
-
-<FiCloud className="text-blue-600 text-3xl"/>
-
-<div>
-
-<h3 className="font-bold mb-2">
-Cloud Migration
-</h3>
-
-<p className="text-gray-600">
-Migration of legacy systems to modern
-cloud-native architectures.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-
-{/* TECHNOLOGY */}
-
-<h2 className="text-2xl font-bold mb-8 text-center">
-Cloud Platforms
-</h2>
-
-<div className="flex flex-wrap justify-center gap-4 mb-20">
-
-<span className="bg-blue-100 px-4 py-2 rounded-full text-sm font-medium">AWS</span>
-<span className="bg-blue-100 px-4 py-2 rounded-full text-sm font-medium">Azure</span>
-<span className="bg-blue-100 px-4 py-2 rounded-full text-sm font-medium">Google Cloud</span>
-<span className="bg-blue-100 px-4 py-2 rounded-full text-sm font-medium">Kubernetes</span>
-<span className="bg-blue-100 px-4 py-2 rounded-full text-sm font-medium">Docker</span>
-
-</div>
-
-
-{/* CTA */}
-
-<div className="text-center">
-
-<Link
-to="/#contact"
-className="bg-gradient-to-r from-blue-700 to-blue-500 text-white px-7 py-3 rounded-lg font-semibold shadow-lg hover:scale-105 transition"
->
-
-Start Your Cloud Transformation →
-
-</Link>
 
 </div>
 
 </div>
 
 </section>
+
+
+
+{/* SERVICES */}
+
+<section className="py-24 bg-white">
+
+<div className="max-w-7xl mx-auto px-6">
+
+<h2 className="text-4xl font-extrabold text-center mb-16 tracking-tight">
+Cloud Capabilities
+</h2>
+
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+<ServiceCard
+title="Cloud Migration"
+desc="Seamless migration of enterprise applications from legacy infrastructure to secure cloud environments."
+image="https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=1200"
+/>
+
+<ServiceCard
+title="Infrastructure Automation"
+desc="Automated infrastructure provisioning enabling scalable and repeatable deployments."
+image="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200"
+/>
+
+<ServiceCard
+title="Cloud Security"
+desc="Enterprise-grade security architecture protecting mission-critical workloads."
+image="https://images.unsplash.com/photo-1510511459019-5dda7724fd87?q=80&w=1200"
+/>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+{/* TECHNOLOGY STACK */}
+
+{/* <section className="py-24 bg-gray-50">
+
+<div className="max-w-6xl mx-auto px-6 text-center">
+
+<h2 className="text-4xl font-extrabold mb-16">
+Cloud Technology Stack
+</h2>
+
+<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+
+{[
+"AWS",
+"Azure",
+"GCP",
+"Kubernetes",
+"Docker"
+].map((tech,i)=>(
+
+<div
+key={i}
+className="bg-white p-6 rounded-xl shadow hover:shadow-xl transition flex flex-col items-center"
+>
+
+<FiCloud className="text-blue-600 text-4xl mb-3"/>
+
+<p className="font-semibold text-lg">{tech}</p>
+
+</div>
+
+))}
+
+</div>
+
+
+<HashLink
+smooth
+to="/#contact"
+className="inline-block mt-16 relative bg-blue-600 text-white px-10 py-4 rounded-lg font-semibold overflow-hidden group"
+>
+
+<span className="relative z-10">
+Request Cloud Consultation
+</span>
+
+<span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-0 group-hover:opacity-100 transition"></span>
+
+</HashLink>
+
+</div>
+
+</section> */}
+<section className="py-28 bg-gray-50">
+
+<div className="max-w-7xl mx-auto px-6 text-center">
+
+<h2 className="text-5xl font-bold text-gray-900 mb-20">
+Cloud Technology Stack
+</h2>
+
+<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
+
+{/* AWS */}
+<div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition">
+<img src="https://cdn.worldvectorlogo.com/logos/aws-2.svg" className="h-14 mx-auto mb-4"/>
+<h3 className="font-bold text-lg mb-2">AWS</h3>
+<p className="text-gray-600 text-sm">
+Enterprise-grade cloud infrastructure and scalable services.
+</p>
+</div>
+
+{/* Azure */}
+<div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition">
+<img src="https://cdn.worldvectorlogo.com/logos/microsoft-azure-1.svg" className="h-14 mx-auto mb-4"/>
+<h3 className="font-bold text-lg mb-2">Microsoft Azure</h3>
+<p className="text-gray-600 text-sm">
+Hybrid cloud environments and enterprise cloud transformation.
+</p>
+</div>
+
+{/* Kubernetes */}
+<div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition">
+<img src="https://cdn.worldvectorlogo.com/logos/kubernets.svg" className="h-14 mx-auto mb-4"/>
+<h3 className="font-bold text-lg mb-2">Kubernetes</h3>
+<p className="text-gray-600 text-sm">
+Container orchestration for scalable cloud-native applications.
+</p>
+</div>
+
+{/* Docker */}
+<div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition">
+<img src="https://cdn.worldvectorlogo.com/logos/docker.svg" className="h-14 mx-auto mb-4"/>
+<h3 className="font-bold text-lg mb-2">Docker</h3>
+<p className="text-gray-600 text-sm">
+Containerized deployments for modern microservices architecture.
+</p>
+</div>
+
+{/* Terraform */}
+<div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition">
+<img src="https://cdn.worldvectorlogo.com/logos/terraform-enterprise.svg" className="h-14 mx-auto mb-4"/>
+<h3 className="font-bold text-lg mb-2">Terraform</h3>
+<p className="text-gray-600 text-sm">
+Infrastructure-as-code automation for scalable deployments.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+</>
 
 )
 

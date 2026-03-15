@@ -27,7 +27,7 @@ className="w-80 md:w-[480px] object-contain drop-shadow-xl hover:scale-125 trans
 <div className="absolute w-[400px] h-[400px] bg-blue-200 opacity-20 blur-3xl rounded-full animate-pulse"></div>
 
 <img
-src="https://i.imgur.com/GzRS9Xa.jpeg"
+src="https://i.imgur.com/q1S4sL9.jpeg"
 alt="Spark Vision"
 className="relative w-[320px] md:w-[520px] object-contain drop-shadow-2xl transition duration-500 hover:scale-105"
 />
@@ -49,7 +49,7 @@ Transforming Businesses with
 
 </h1>
 
-<p className="text-gray-600 mb-8">
+<p className="text-gray-800 mb-8">
 
 Spark Vision Consulting helps enterprises modernize operations,
 optimize supply chains, and unlock data-driven insights through
