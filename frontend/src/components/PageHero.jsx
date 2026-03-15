@@ -1,24 +1,40 @@
-// function PageHero({title,subtitle,image}){
 
-// return(
 
-// <section className="relative pt-36 pb-24 text-white overflow-hidden">
+// function PageHero({ title, subtitle, image }) {
+
+// return (
+
+// <section className="relative pt-40 pb-28 text-white overflow-hidden">
+
+// {/* BACKGROUND IMAGE */}
 
 // <img
 // src={image}
-// className="absolute inset-0 w-full h-full object-cover"
+// alt={title}
+// className="absolute inset-0 w-full h-full object-cover scale-105"
 // />
 
-// <div className="absolute inset-0 bg-black/60"></div>
+
+// {/* DARK OVERLAY */}
+
+// <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/70"></div>
+
+
+// {/* CONTENT */}
 
 // <div className="relative max-w-7xl mx-auto px-6 text-center">
 
-// <h1 className="text-4xl md:text-6xl font-bold mb-6">
+// <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold mb-6 leading-tight drop-shadow-xl">
+
 // {title}
+
 // </h1>
 
-// <p className="text-lg md:text-xl max-w-3xl mx-auto text-gray-200">
+
+// <p className="text-xl md:text-2xl max-w-3xl mx-auto text-gray-200 leading-relaxed">
+
 // {subtitle}
+
 // </p>
 
 // </div>
@@ -35,7 +51,7 @@ function PageHero({ title, subtitle, image }) {
 
 return (
 
-<section className="relative pt-40 pb-28 text-white overflow-hidden">
+<section className="relative pt-40 pb-28 overflow-hidden text-white">
 
 {/* BACKGROUND IMAGE */}
 
@@ -48,21 +64,25 @@ className="absolute inset-0 w-full h-full object-cover scale-105"
 
 {/* DARK OVERLAY */}
 
-<div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/70"></div>
+<div className="absolute inset-0 bg-gradient-to-b from-black/75 via-black/65 to-black/75"></div>
 
 
 {/* CONTENT */}
 
 <div className="relative max-w-7xl mx-auto px-6 text-center">
 
-<h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold mb-6 leading-tight drop-shadow-xl">
+{/* TITLE */}
+
+<h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold mb-6 leading-tight text-white drop-shadow-2xl">
 
 {title}
 
 </h1>
 
 
-<p className="text-xl md:text-2xl max-w-3xl mx-auto text-gray-200 leading-relaxed">
+{/* SUBTITLE */}
+
+<p className="text-xl md:text-2xl max-w-3xl mx-auto text-blue-100 font-medium leading-relaxed drop-shadow-lg">
 
 {subtitle}
 

@@ -105,7 +105,7 @@ const services = [
 {
 title:"Cloud Computing Services",
 desc:"We help enterprises modernize infrastructure using secure and scalable cloud platforms.",
-img:"https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2000",
+img:"https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?q=80&w=1200",
 link:"/solutions/cloud"
 },
 
@@ -119,18 +119,20 @@ link:"/solutions/analytics"
 {
 title:"Managed IT Services",
 desc:"Comprehensive IT support including infrastructure monitoring, maintenance, and security.",
-img:"https://images.unsplash.com/photo-1581092921461-eab62e97a780?q=80&w=1200",
+img:"https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?q=80&w=1200",
 link:"/solutions/managed"
 },
 
 {
 title:"Digital Transformation",
 desc:"Accelerate business innovation with modern technology strategies and digital platforms.",
-img:"https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200",
+img:"https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=1200",
 link:"/solutions/digital"
 }
 
 ]
+
+
 
 return(
 

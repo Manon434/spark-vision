@@ -59,8 +59,8 @@ Digital Transformation Services
 
 <ServiceCard
 title="Process Automation"
-desc="Automate business workflows and reduce operational inefficiencies."
-image="https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=1200"
+desc="Automate business operations through intelligent workflows and digital tools."
+image="https://images.unsplash.com/photo-1581092335397-9583eb92d232?w=1200&q=80"
 />
 
 <ServiceCard

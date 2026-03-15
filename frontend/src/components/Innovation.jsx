@@ -244,7 +244,7 @@ className="w-full h-52 object-cover"
 <div className="py-12 px-8">
 
 <p className="text-6xl font-bold text-blue-600">
-<Counter target={15} suffix="+"/>
+<Counter target={5} suffix="+"/>
 </p>
 
 <p className="text-gray-800 mt-4 tracking-wide text-xl">

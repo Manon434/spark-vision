@@ -74,15 +74,15 @@ image="https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=1200"
 />
 
 <ServiceCard
-title="Infrastructure Automation"
-desc="Automated infrastructure provisioning enabling scalable and repeatable deployments."
-image="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200"
+title="SAP Cloud Integration"
+desc="Seamless integration of SAP systems with modern cloud platforms to enable real-time data access, improved operational efficiency, and scalable enterprise architecture."
+image="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200"
 />
 
 <ServiceCard
-title="Cloud Security"
-desc="Enterprise-grade security architecture protecting mission-critical workloads."
-image="https://images.unsplash.com/photo-1510511459019-5dda7724fd87?q=80&w=1200"
+title="AI Integration"
+desc="Embed artificial intelligence into enterprise workflows to automate processes, enhance predictive analytics, and unlock new business insights across cloud platforms."
+image="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1200"
 />
 
 </div>
@@ -95,57 +95,7 @@ image="https://images.unsplash.com/photo-1510511459019-5dda7724fd87?q=80&w=1200"
 
 {/* TECHNOLOGY STACK */}
 
-{/* <section className="py-24 bg-gray-50">
 
-<div className="max-w-6xl mx-auto px-6 text-center">
-
-<h2 className="text-4xl font-extrabold mb-16">
-Cloud Technology Stack
-</h2>
-
-<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
-
-{[
-"AWS",
-"Azure",
-"GCP",
-"Kubernetes",
-"Docker"
-].map((tech,i)=>(
-
-<div
-key={i}
-className="bg-white p-6 rounded-xl shadow hover:shadow-xl transition flex flex-col items-center"
->
-
-<FiCloud className="text-blue-600 text-4xl mb-3"/>
-
-<p className="font-semibold text-lg">{tech}</p>
-
-</div>
-
-))}
-
-</div>
-
-
-<HashLink
-smooth
-to="/#contact"
-className="inline-block mt-16 relative bg-blue-600 text-white px-10 py-4 rounded-lg font-semibold overflow-hidden group"
->
-
-<span className="relative z-10">
-Request Cloud Consultation
-</span>
-
-<span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-0 group-hover:opacity-100 transition"></span>
-
-</HashLink>
-
-</div>
-
-</section> */}
 <section className="py-28 bg-gray-50">
 
 <div className="max-w-7xl mx-auto px-6 text-center">
